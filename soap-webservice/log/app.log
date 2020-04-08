@@ -1,0 +1,258 @@
+08-04-2020 19:33:43.995 [main] INFO  c.e.demo.SoapWebserviceApplication.logStarting - Starting SoapWebserviceApplication on DESKTOP-RRKV833 with PID 2172 (E:\Dev64x\workspaces\spring-boot-workspace\apache-camel-web-app\spring-boot-camel-routing\soap-webservice\build\classes\java\main started by Amit in E:\Dev64x\workspaces\spring-boot-workspace\apache-camel-web-app\spring-boot-camel-routing\soap-webservice)
+08-04-2020 19:33:44.001 [main] INFO  c.e.demo.SoapWebserviceApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+08-04-2020 19:33:45.345 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
+08-04-2020 19:33:45.353 [main] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+08-04-2020 19:33:45.354 [main] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.33]
+08-04-2020 19:33:45.448 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+08-04-2020 19:33:45.448 [main] INFO  o.s.web.context.ContextLoader.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1406 ms
+08-04-2020 19:33:46.007 [main] INFO  c.e.d.c.SoapWebServiceConfig$$EnhancerBySpringCGLIB$$b47b5f89.bus - enabling logging of SOAP messages
+08-04-2020 19:33:46.025 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext.refresh - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'helloServiceEndpoint' defined in class path resource [com/example/demo/config/SoapWebServiceConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.xml.ws.Endpoint]: Factory method 'helloServiceEndpoint' threw exception; nested exception is java.lang.NoClassDefFoundError: javax.jws.WebService
+08-04-2020 19:33:46.029 [main] INFO  o.a.catalina.core.StandardService.log - Stopping service [Tomcat]
+08-04-2020 19:33:46.035 [main] WARN  o.a.c.loader.WebappClassLoaderBase.log - The web application [ROOT] appears to have started a thread named [MemoryMXBean notification dispatcher] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ jdk.management/com.ibm.lang.management.internal.MemoryNotificationThread.processNotificationLoop(Native Method)
+ jdk.management/com.ibm.lang.management.internal.MemoryNotificationThread.run(MemoryNotificationThread.java:183)
+08-04-2020 19:33:46.043 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener.logMessage - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+08-04-2020 19:33:46.052 [main] ERROR o.s.boot.SpringApplication.reportFailure - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'helloServiceEndpoint' defined in class path resource [com/example/demo/config/SoapWebServiceConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.xml.ws.Endpoint]: Factory method 'helloServiceEndpoint' threw exception; nested exception is java.lang.NoClassDefFoundError: javax.jws.WebService
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:656)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:484)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$199.0000000000000000.getObject(Unknown Source)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:882)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.example.demo.SoapWebserviceApplication.main(SoapWebserviceApplication.java:10)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.xml.ws.Endpoint]: Factory method 'helloServiceEndpoint' threw exception; nested exception is java.lang.NoClassDefFoundError: javax.jws.WebService
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:651)
+	... 20 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: javax.jws.WebService
+	at org.apache.cxf.jaxws.support.JaxWsImplementorInfo.initialize(JaxWsImplementorInfo.java:273)
+	at org.apache.cxf.jaxws.support.JaxWsImplementorInfo.<init>(JaxWsImplementorInfo.java:60)
+	at org.apache.cxf.jaxws.EndpointImpl.getServer(EndpointImpl.java:403)
+	at org.apache.cxf.jaxws.EndpointImpl.doPublish(EndpointImpl.java:338)
+	at org.apache.cxf.jaxws.EndpointImpl.publish(EndpointImpl.java:255)
+	at com.example.demo.config.SoapWebServiceConfig.helloServiceEndpoint(SoapWebServiceConfig.java:52)
+	at com.example.demo.config.SoapWebServiceConfig$$EnhancerBySpringCGLIB$$b47b5f89.CGLIB$helloServiceEndpoint$2(<generated>)
+	at com.example.demo.config.SoapWebServiceConfig$$EnhancerBySpringCGLIB$$b47b5f89$$FastClassBySpringCGLIB$$e1f2d548.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at com.example.demo.config.SoapWebServiceConfig$$EnhancerBySpringCGLIB$$b47b5f89.helloServiceEndpoint(<generated>)
+	at com.example.demo.config.SoapWebServiceConfig$$FastClassBySpringCGLIB$$24f42ca0.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:62)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at com.example.demo.config.SoapWebServiceConfig$$EnhancerBySpringCGLIB$$3e69541a.helloServiceEndpoint(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 21 common frames omitted
+Caused by: java.lang.ClassNotFoundException: javax.jws.WebService
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:766)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:1077)
+	... 50 common frames omitted
+08-04-2020 19:35:14.684 [main] INFO  c.e.demo.SoapWebserviceApplication.logStarting - Starting SoapWebserviceApplication on DESKTOP-RRKV833 with PID 5936 (E:\Dev64x\workspaces\spring-boot-workspace\apache-camel-web-app\spring-boot-camel-routing\soap-webservice\build\classes\java\main started by Amit in E:\Dev64x\workspaces\spring-boot-workspace\apache-camel-web-app\spring-boot-camel-routing\soap-webservice)
+08-04-2020 19:35:14.689 [main] INFO  c.e.demo.SoapWebserviceApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+08-04-2020 19:35:15.983 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
+08-04-2020 19:35:15.990 [main] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+08-04-2020 19:35:15.990 [main] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.33]
+08-04-2020 19:35:16.090 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+08-04-2020 19:35:16.091 [main] INFO  o.s.web.context.ContextLoader.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1352 ms
+08-04-2020 19:35:16.632 [main] INFO  c.e.d.c.SoapWebServiceConfig$$EnhancerBySpringCGLIB$$6e8b86d5.bus - enabling logging of SOAP messages
+08-04-2020 19:35:16.649 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext.refresh - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'helloServiceEndpoint' defined in class path resource [com/example/demo/config/SoapWebServiceConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.xml.ws.Endpoint]: Factory method 'helloServiceEndpoint' threw exception; nested exception is java.lang.NoClassDefFoundError: javax.jws.WebService
+08-04-2020 19:35:16.653 [main] INFO  o.a.catalina.core.StandardService.log - Stopping service [Tomcat]
+08-04-2020 19:35:16.657 [main] WARN  o.a.c.loader.WebappClassLoaderBase.log - The web application [ROOT] appears to have started a thread named [MemoryMXBean notification dispatcher] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ jdk.management/com.ibm.lang.management.internal.MemoryNotificationThread.processNotificationLoop(Native Method)
+ jdk.management/com.ibm.lang.management.internal.MemoryNotificationThread.run(MemoryNotificationThread.java:183)
+08-04-2020 19:35:16.674 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener.logMessage - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+08-04-2020 19:35:16.682 [main] ERROR o.s.boot.SpringApplication.reportFailure - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'helloServiceEndpoint' defined in class path resource [com/example/demo/config/SoapWebServiceConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.xml.ws.Endpoint]: Factory method 'helloServiceEndpoint' threw exception; nested exception is java.lang.NoClassDefFoundError: javax.jws.WebService
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:656)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:484)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$199.0000000000000000.getObject(Unknown Source)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:882)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.example.demo.SoapWebserviceApplication.main(SoapWebserviceApplication.java:10)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.xml.ws.Endpoint]: Factory method 'helloServiceEndpoint' threw exception; nested exception is java.lang.NoClassDefFoundError: javax.jws.WebService
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:651)
+	... 20 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: javax.jws.WebService
+	at org.apache.cxf.jaxws.support.JaxWsImplementorInfo.initialize(JaxWsImplementorInfo.java:273)
+	at org.apache.cxf.jaxws.support.JaxWsImplementorInfo.<init>(JaxWsImplementorInfo.java:60)
+	at org.apache.cxf.jaxws.EndpointImpl.getServer(EndpointImpl.java:403)
+	at org.apache.cxf.jaxws.EndpointImpl.doPublish(EndpointImpl.java:338)
+	at org.apache.cxf.jaxws.EndpointImpl.publish(EndpointImpl.java:255)
+	at com.example.demo.config.SoapWebServiceConfig.helloServiceEndpoint(SoapWebServiceConfig.java:52)
+	at com.example.demo.config.SoapWebServiceConfig$$EnhancerBySpringCGLIB$$6e8b86d5.CGLIB$helloServiceEndpoint$2(<generated>)
+	at com.example.demo.config.SoapWebServiceConfig$$EnhancerBySpringCGLIB$$6e8b86d5$$FastClassBySpringCGLIB$$2905fd41.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at com.example.demo.config.SoapWebServiceConfig$$EnhancerBySpringCGLIB$$6e8b86d5.helloServiceEndpoint(<generated>)
+	at com.example.demo.config.SoapWebServiceConfig$$FastClassBySpringCGLIB$$24f42ca0.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:62)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at com.example.demo.config.SoapWebServiceConfig$$EnhancerBySpringCGLIB$$baefc201.helloServiceEndpoint(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 21 common frames omitted
+Caused by: java.lang.ClassNotFoundException: javax.jws.WebService
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:766)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:1077)
+	... 50 common frames omitted
+08-04-2020 19:39:19.458 [main] INFO  c.e.demo.SoapWebserviceApplication.logStarting - Starting SoapWebserviceApplication on DESKTOP-RRKV833 with PID 2864 (E:\Dev64x\workspaces\spring-boot-workspace\apache-camel-web-app\spring-boot-camel-routing\soap-webservice\build\classes\java\main started by Amit in E:\Dev64x\workspaces\spring-boot-workspace\apache-camel-web-app\spring-boot-camel-routing\soap-webservice)
+08-04-2020 19:39:19.463 [main] INFO  c.e.demo.SoapWebserviceApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+08-04-2020 19:39:20.747 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
+08-04-2020 19:39:20.753 [main] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+08-04-2020 19:39:20.754 [main] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.33]
+08-04-2020 19:39:20.853 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+08-04-2020 19:39:20.853 [main] INFO  o.s.web.context.ContextLoader.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1344 ms
+08-04-2020 19:39:21.426 [main] INFO  c.e.d.c.SoapWebServiceConfig$$EnhancerBySpringCGLIB$$77326bf6.bus - enabling logging of SOAP messages
+08-04-2020 19:39:21.446 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext.refresh - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'helloServiceEndpoint' defined in class path resource [com/example/demo/config/SoapWebServiceConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.xml.ws.Endpoint]: Factory method 'helloServiceEndpoint' threw exception; nested exception is java.lang.NoClassDefFoundError: javax.jws.WebService
+08-04-2020 19:39:21.449 [main] INFO  o.a.catalina.core.StandardService.log - Stopping service [Tomcat]
+08-04-2020 19:39:21.454 [main] WARN  o.a.c.loader.WebappClassLoaderBase.log - The web application [ROOT] appears to have started a thread named [MemoryMXBean notification dispatcher] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ jdk.management/com.ibm.lang.management.internal.MemoryNotificationThread.processNotificationLoop(Native Method)
+ jdk.management/com.ibm.lang.management.internal.MemoryNotificationThread.run(MemoryNotificationThread.java:183)
+08-04-2020 19:39:21.466 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener.logMessage - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+08-04-2020 19:39:21.475 [main] ERROR o.s.boot.SpringApplication.reportFailure - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'helloServiceEndpoint' defined in class path resource [com/example/demo/config/SoapWebServiceConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.xml.ws.Endpoint]: Factory method 'helloServiceEndpoint' threw exception; nested exception is java.lang.NoClassDefFoundError: javax.jws.WebService
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:656)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:484)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$199.0000000000000000.getObject(Unknown Source)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:882)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.example.demo.SoapWebserviceApplication.main(SoapWebserviceApplication.java:10)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.xml.ws.Endpoint]: Factory method 'helloServiceEndpoint' threw exception; nested exception is java.lang.NoClassDefFoundError: javax.jws.WebService
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:651)
+	... 20 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: javax.jws.WebService
+	at org.apache.cxf.jaxws.support.JaxWsImplementorInfo.initialize(JaxWsImplementorInfo.java:273)
+	at org.apache.cxf.jaxws.support.JaxWsImplementorInfo.<init>(JaxWsImplementorInfo.java:60)
+	at org.apache.cxf.jaxws.EndpointImpl.getServer(EndpointImpl.java:403)
+	at org.apache.cxf.jaxws.EndpointImpl.doPublish(EndpointImpl.java:338)
+	at org.apache.cxf.jaxws.EndpointImpl.publish(EndpointImpl.java:255)
+	at com.example.demo.config.SoapWebServiceConfig.helloServiceEndpoint(SoapWebServiceConfig.java:52)
+	at com.example.demo.config.SoapWebServiceConfig$$EnhancerBySpringCGLIB$$77326bf6.CGLIB$helloServiceEndpoint$2(<generated>)
+	at com.example.demo.config.SoapWebServiceConfig$$EnhancerBySpringCGLIB$$77326bf6$$FastClassBySpringCGLIB$$45b9dd4.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at com.example.demo.config.SoapWebServiceConfig$$EnhancerBySpringCGLIB$$77326bf6.helloServiceEndpoint(<generated>)
+	at com.example.demo.config.SoapWebServiceConfig$$FastClassBySpringCGLIB$$24f42ca0.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:62)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at com.example.demo.config.SoapWebServiceConfig$$EnhancerBySpringCGLIB$$cbfef5e8.helloServiceEndpoint(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 21 common frames omitted
+Caused by: java.lang.ClassNotFoundException: javax.jws.WebService
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:766)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:1077)
+	... 50 common frames omitted
+08-04-2020 19:42:26.884 [main] INFO  c.e.demo.SoapWebserviceApplication.logStarting - Starting SoapWebserviceApplication on DESKTOP-RRKV833 with PID 17056 (E:\Dev64x\workspaces\spring-boot-workspace\apache-camel-web-app\spring-boot-camel-routing\soap-webservice\build\classes\java\main started by Amit in E:\Dev64x\workspaces\spring-boot-workspace\apache-camel-web-app\spring-boot-camel-routing\soap-webservice)
+08-04-2020 19:42:26.887 [main] INFO  c.e.demo.SoapWebserviceApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+08-04-2020 19:42:28.179 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
+08-04-2020 19:42:28.186 [main] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+08-04-2020 19:42:28.186 [main] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.33]
+08-04-2020 19:42:28.439 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+08-04-2020 19:42:28.439 [main] INFO  o.s.web.context.ContextLoader.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1515 ms
+08-04-2020 19:42:28.880 [main] INFO  c.e.d.c.SoapWebServiceConfig$$EnhancerBySpringCGLIB$$cd4155f6.bus - enabling logging of SOAP messages
+08-04-2020 19:42:28.904 [main] INFO  o.a.c.w.s.f.ReflectionServiceFactoryBean.buildServiceFromClass - Creating Service {http://impl.service.demo.example.com/}HelloServiceImpl1Service from class com.example.demo.service.impl.HelloServiceImpl1
+08-04-2020 19:42:29.094 [main] INFO  org.apache.cxf.endpoint.ServerImpl.initDestination - Setting the server's publish address to be /hello
+08-04-2020 19:42:29.100 [main] INFO  c.e.d.c.SoapWebServiceConfig$$EnhancerBySpringCGLIB$$cd4155f6.helloServiceEndpoint - publishing HelloService on /hello
+08-04-2020 19:42:29.104 [main] INFO  o.a.c.w.s.f.ReflectionServiceFactoryBean.buildServiceFromClass - Creating Service {http://impl.service.demo.example.com/}HelloServiceImpl2Service from class com.example.demo.service.impl.HelloServiceImpl2
+08-04-2020 19:42:29.105 [main] INFO  org.apache.cxf.endpoint.ServerImpl.initDestination - Setting the server's publish address to be /hello2
+08-04-2020 19:42:29.105 [main] INFO  c.e.d.c.SoapWebServiceConfig$$EnhancerBySpringCGLIB$$cd4155f6.helloServiceEndpoint2 - publishing HelloServiceImpl2 on /hello2
+08-04-2020 19:42:29.218 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService 'applicationTaskExecutor'
+08-04-2020 19:42:29.416 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver.<init> - Exposing 2 endpoint(s) beneath base path '/actuator'
+08-04-2020 19:42:29.471 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port(s): 8080 (http) with context path ''
+08-04-2020 19:42:29.473 [main] INFO  c.e.demo.SoapWebserviceApplication.logStarted - Started SoapWebserviceApplication in 2.916 seconds (JVM running for 4.135)
+08-04-2020 19:42:30.645 [RMI TCP Connection(3)-192.168.1.4] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+08-04-2020 19:42:30.646 [RMI TCP Connection(3)-192.168.1.4] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Initializing Servlet 'dispatcherServlet'
+08-04-2020 19:42:30.652 [RMI TCP Connection(3)-192.168.1.4] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Completed initialization in 6 ms
