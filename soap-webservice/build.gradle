@@ -22,7 +22,6 @@ dependencies {
 
 	// newly added
 	implementation 'org.apache.cxf:cxf-spring-boot-starter-jaxws:3.3.6'
-	implementation 'javax.xml.ws:jaxws-api:2.3.1'
 	implementation 'org.apache.cxf:cxf-rt-features-logging:3.3.6'
 	implementation 'javax.xml.ws:jaxws-api:2.3.1'
 	implementation 'com.sun.xml.ws:jaxws-ri:2.3.2'
