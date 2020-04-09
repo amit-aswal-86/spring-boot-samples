@@ -1,7 +1,7 @@
 package com.example.demo.config;
 
-import com.example.demo.service.impl.HelloServiceImpl1;
-import com.example.demo.service.impl.HelloServiceImpl2;
+import com.example.demo.service.impl.GenericWebServiceImpl;
+import com.example.demo.service.impl.HelloServiceImpl;
 import org.apache.cxf.Bus;
 import javax.xml.ws.Endpoint;
 import org.apache.cxf.ext.logging.LoggingFeature;
@@ -47,7 +47,7 @@ public class SoapWebServiceConfig {
 
     @Bean
     public Endpoint helloServiceEndpoint() {
-        EndpointImpl endpoint = new EndpointImpl(bus(), new HelloServiceImpl1());
+        EndpointImpl endpoint = new EndpointImpl(bus(), new HelloServiceImpl());
         String addr = "/hello";
         endpoint.publish(addr);
         logger.info("publishing HelloService on " + addr);
@@ -55,9 +55,9 @@ public class SoapWebServiceConfig {
     }
 
     @Bean
-    public Endpoint helloServiceEndpoint2() {
-        EndpointImpl endpoint = new EndpointImpl(bus(), new HelloServiceImpl2());
-        String addr = "/hello2";
+    public Endpoint genericWebServiceEndpoint() {
+        EndpointImpl endpoint = new EndpointImpl(bus(), new GenericWebServiceImpl());
+        String addr = "/generic-web-service";
         endpoint.publish(addr);
         logger.info("publishing HelloServiceImpl2 on " + addr);
         return endpoint;

@@ -1,20 +1,20 @@
-08-04-2020 19:33:43.995 [main] INFO  c.e.demo.SoapWebserviceApplication.logStarting - Starting SoapWebserviceApplication on DESKTOP-RRKV833 with PID 2172 (E:\Dev64x\workspaces\spring-boot-workspace\apache-camel-web-app\spring-boot-camel-routing\soap-webservice\build\classes\java\main started by Amit in E:\Dev64x\workspaces\spring-boot-workspace\apache-camel-web-app\spring-boot-camel-routing\soap-webservice)
-08-04-2020 19:33:44.001 [main] INFO  c.e.demo.SoapWebserviceApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
-08-04-2020 19:33:45.345 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
-08-04-2020 19:33:45.353 [main] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
-08-04-2020 19:33:45.354 [main] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.33]
-08-04-2020 19:33:45.448 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
-08-04-2020 19:33:45.448 [main] INFO  o.s.web.context.ContextLoader.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1406 ms
-08-04-2020 19:33:46.007 [main] INFO  c.e.d.c.SoapWebServiceConfig$$EnhancerBySpringCGLIB$$b47b5f89.bus - enabling logging of SOAP messages
-08-04-2020 19:33:46.025 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext.refresh - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'helloServiceEndpoint' defined in class path resource [com/example/demo/config/SoapWebServiceConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.xml.ws.Endpoint]: Factory method 'helloServiceEndpoint' threw exception; nested exception is java.lang.NoClassDefFoundError: javax.jws.WebService
-08-04-2020 19:33:46.029 [main] INFO  o.a.catalina.core.StandardService.log - Stopping service [Tomcat]
-08-04-2020 19:33:46.035 [main] WARN  o.a.c.loader.WebappClassLoaderBase.log - The web application [ROOT] appears to have started a thread named [MemoryMXBean notification dispatcher] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+09-04-2020 12:49:53.836 [main] INFO  c.e.demo.SoapWebserviceApplication.logStarting - Starting SoapWebserviceApplication on DESKTOP-RRKV833 with PID 16324 (E:\Dev64x\workspaces\spring-boot-workspace\spring-boot-samples\soap-webservice\build\classes\java\main started by Amit in E:\Dev64x\workspaces\spring-boot-workspace\spring-boot-samples\soap-webservice)
+09-04-2020 12:49:53.845 [main] INFO  c.e.demo.SoapWebserviceApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+09-04-2020 12:49:55.411 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
+09-04-2020 12:49:55.421 [main] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+09-04-2020 12:49:55.422 [main] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.33]
+09-04-2020 12:49:55.517 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+09-04-2020 12:49:55.517 [main] INFO  o.s.web.context.ContextLoader.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1610 ms
+09-04-2020 12:49:56.139 [main] INFO  c.e.d.c.SoapWebServiceConfig$$EnhancerBySpringCGLIB$$72a94fd5.bus - enabling logging of SOAP messages
+09-04-2020 12:49:56.161 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext.refresh - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'helloServiceEndpoint' defined in class path resource [com/example/demo/config/SoapWebServiceConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.xml.ws.Endpoint]: Factory method 'helloServiceEndpoint' threw exception; nested exception is java.lang.NoClassDefFoundError: javax.jws.WebService
+09-04-2020 12:49:56.165 [main] INFO  o.a.catalina.core.StandardService.log - Stopping service [Tomcat]
+09-04-2020 12:49:56.170 [main] WARN  o.a.c.loader.WebappClassLoaderBase.log - The web application [ROOT] appears to have started a thread named [MemoryMXBean notification dispatcher] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  jdk.management/com.ibm.lang.management.internal.MemoryNotificationThread.processNotificationLoop(Native Method)
  jdk.management/com.ibm.lang.management.internal.MemoryNotificationThread.run(MemoryNotificationThread.java:183)
-08-04-2020 19:33:46.043 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener.logMessage - 
+09-04-2020 12:49:56.183 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener.logMessage - 
 
 Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-08-04-2020 19:33:46.052 [main] ERROR o.s.boot.SpringApplication.reportFailure - Application run failed
+09-04-2020 12:49:56.193 [main] ERROR o.s.boot.SpringApplication.reportFailure - Application run failed
 org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'helloServiceEndpoint' defined in class path resource [com/example/demo/config/SoapWebServiceConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.xml.ws.Endpoint]: Factory method 'helloServiceEndpoint' threw exception; nested exception is java.lang.NoClassDefFoundError: javax.jws.WebService
 	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:656)
 	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:484)
@@ -48,11 +48,11 @@ Caused by: java.lang.NoClassDefFoundError: javax.jws.WebService
 	at org.apache.cxf.jaxws.EndpointImpl.doPublish(EndpointImpl.java:338)
 	at org.apache.cxf.jaxws.EndpointImpl.publish(EndpointImpl.java:255)
 	at com.example.demo.config.SoapWebServiceConfig.helloServiceEndpoint(SoapWebServiceConfig.java:52)
-	at com.example.demo.config.SoapWebServiceConfig$$EnhancerBySpringCGLIB$$b47b5f89.CGLIB$helloServiceEndpoint$2(<generated>)
-	at com.example.demo.config.SoapWebServiceConfig$$EnhancerBySpringCGLIB$$b47b5f89$$FastClassBySpringCGLIB$$e1f2d548.invoke(<generated>)
+	at com.example.demo.config.SoapWebServiceConfig$$EnhancerBySpringCGLIB$$72a94fd5.CGLIB$helloServiceEndpoint$2(<generated>)
+	at com.example.demo.config.SoapWebServiceConfig$$EnhancerBySpringCGLIB$$72a94fd5$$FastClassBySpringCGLIB$$4abd2caf.invoke(<generated>)
 	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
 	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
-	at com.example.demo.config.SoapWebServiceConfig$$EnhancerBySpringCGLIB$$b47b5f89.helloServiceEndpoint(<generated>)
+	at com.example.demo.config.SoapWebServiceConfig$$EnhancerBySpringCGLIB$$72a94fd5.helloServiceEndpoint(<generated>)
 	at com.example.demo.config.SoapWebServiceConfig$$FastClassBySpringCGLIB$$24f42ca0.invoke(<generated>)
 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
@@ -65,7 +65,7 @@ Caused by: java.lang.NoClassDefFoundError: javax.jws.WebService
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
-	at com.example.demo.config.SoapWebServiceConfig$$EnhancerBySpringCGLIB$$3e69541a.helloServiceEndpoint(<generated>)
+	at com.example.demo.config.SoapWebServiceConfig$$EnhancerBySpringCGLIB$$b8583ccb.helloServiceEndpoint(<generated>)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -77,182 +77,1009 @@ Caused by: java.lang.ClassNotFoundException: javax.jws.WebService
 	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:1077)
 	... 50 common frames omitted
-08-04-2020 19:35:14.684 [main] INFO  c.e.demo.SoapWebserviceApplication.logStarting - Starting SoapWebserviceApplication on DESKTOP-RRKV833 with PID 5936 (E:\Dev64x\workspaces\spring-boot-workspace\apache-camel-web-app\spring-boot-camel-routing\soap-webservice\build\classes\java\main started by Amit in E:\Dev64x\workspaces\spring-boot-workspace\apache-camel-web-app\spring-boot-camel-routing\soap-webservice)
-08-04-2020 19:35:14.689 [main] INFO  c.e.demo.SoapWebserviceApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
-08-04-2020 19:35:15.983 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
-08-04-2020 19:35:15.990 [main] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
-08-04-2020 19:35:15.990 [main] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.33]
-08-04-2020 19:35:16.090 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
-08-04-2020 19:35:16.091 [main] INFO  o.s.web.context.ContextLoader.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1352 ms
-08-04-2020 19:35:16.632 [main] INFO  c.e.d.c.SoapWebServiceConfig$$EnhancerBySpringCGLIB$$6e8b86d5.bus - enabling logging of SOAP messages
-08-04-2020 19:35:16.649 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext.refresh - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'helloServiceEndpoint' defined in class path resource [com/example/demo/config/SoapWebServiceConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.xml.ws.Endpoint]: Factory method 'helloServiceEndpoint' threw exception; nested exception is java.lang.NoClassDefFoundError: javax.jws.WebService
-08-04-2020 19:35:16.653 [main] INFO  o.a.catalina.core.StandardService.log - Stopping service [Tomcat]
-08-04-2020 19:35:16.657 [main] WARN  o.a.c.loader.WebappClassLoaderBase.log - The web application [ROOT] appears to have started a thread named [MemoryMXBean notification dispatcher] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- jdk.management/com.ibm.lang.management.internal.MemoryNotificationThread.processNotificationLoop(Native Method)
- jdk.management/com.ibm.lang.management.internal.MemoryNotificationThread.run(MemoryNotificationThread.java:183)
-08-04-2020 19:35:16.674 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener.logMessage - 
+09-04-2020 12:50:34.661 [main] INFO  c.e.demo.SoapWebserviceApplication.logStarting - Starting SoapWebserviceApplication on DESKTOP-RRKV833 with PID 11764 (E:\Dev64x\workspaces\spring-boot-workspace\spring-boot-samples\soap-webservice\build\classes\java\main started by Amit in E:\Dev64x\workspaces\spring-boot-workspace\spring-boot-samples\soap-webservice)
+09-04-2020 12:50:34.665 [main] INFO  c.e.demo.SoapWebserviceApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+09-04-2020 12:50:36.145 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
+09-04-2020 12:50:36.154 [main] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+09-04-2020 12:50:36.154 [main] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.33]
+09-04-2020 12:50:36.433 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+09-04-2020 12:50:36.433 [main] INFO  o.s.web.context.ContextLoader.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1732 ms
+09-04-2020 12:50:36.924 [main] INFO  c.e.d.c.SoapWebServiceConfig$$EnhancerBySpringCGLIB$$308bc92a.bus - enabling logging of SOAP messages
+09-04-2020 12:50:36.949 [main] INFO  o.a.c.w.s.f.ReflectionServiceFactoryBean.buildServiceFromClass - Creating Service {http://impl.service.demo.example.com/}HelloServiceImpl1Service from class com.example.demo.service.impl.HelloServiceImpl1
+09-04-2020 12:50:37.167 [main] INFO  org.apache.cxf.endpoint.ServerImpl.initDestination - Setting the server's publish address to be /hello
+09-04-2020 12:50:37.172 [main] INFO  c.e.d.c.SoapWebServiceConfig$$EnhancerBySpringCGLIB$$308bc92a.helloServiceEndpoint - publishing HelloService on /hello
+09-04-2020 12:50:37.176 [main] INFO  o.a.c.w.s.f.ReflectionServiceFactoryBean.buildServiceFromClass - Creating Service {http://impl.service.demo.example.com/}HelloServiceImpl2Service from class com.example.demo.service.impl.HelloServiceImpl2
+09-04-2020 12:50:37.177 [main] INFO  org.apache.cxf.endpoint.ServerImpl.initDestination - Setting the server's publish address to be /hello2
+09-04-2020 12:50:37.177 [main] INFO  c.e.d.c.SoapWebServiceConfig$$EnhancerBySpringCGLIB$$308bc92a.helloServiceEndpoint2 - publishing HelloServiceImpl2 on /hello2
+09-04-2020 12:50:37.293 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService 'applicationTaskExecutor'
+09-04-2020 12:50:37.521 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver.<init> - Exposing 2 endpoint(s) beneath base path '/actuator'
+09-04-2020 12:50:37.577 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port(s): 8080 (http) with context path ''
+09-04-2020 12:50:37.579 [main] INFO  c.e.demo.SoapWebserviceApplication.logStarted - Started SoapWebserviceApplication in 3.274 seconds (JVM running for 4.598)
+09-04-2020 12:50:38.350 [http-nio-8080-exec-3] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+09-04-2020 12:50:38.351 [http-nio-8080-exec-3] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Initializing Servlet 'dispatcherServlet'
+09-04-2020 12:50:38.359 [http-nio-8080-exec-3] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Completed initialization in 8 ms
+09-04-2020 13:00:43.863 [http-nio-8080-exec-5] WARN  o.a.cxf.phase.PhaseInterceptorChain.doLog - Interceptor for {http://impl.service.demo.example.com/}HelloServiceImpl1Service has thrown exception, unwinding now
+org.apache.cxf.binding.soap.SoapFault: A SOAP 1.2 message is not valid when sent to a SOAP 1.1 only endpoint.
+	at org.apache.cxf.binding.soap.interceptor.ReadHeadersInterceptor.handleMessage(ReadHeadersInterceptor.java:180)
+	at org.apache.cxf.binding.soap.interceptor.ReadHeadersInterceptor.handleMessage(ReadHeadersInterceptor.java:70)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:308)
+	at org.apache.cxf.transport.ChainInitiationObserver.onMessage(ChainInitiationObserver.java:121)
+	at org.apache.cxf.transport.http.AbstractHTTPDestination.invoke(AbstractHTTPDestination.java:267)
+	at org.apache.cxf.transport.servlet.ServletController.invokeDestination(ServletController.java:234)
+	at org.apache.cxf.transport.servlet.ServletController.invoke(ServletController.java:208)
+	at org.apache.cxf.transport.servlet.ServletController.invoke(ServletController.java:160)
+	at org.apache.cxf.transport.servlet.CXFNonSpringServlet.invoke(CXFNonSpringServlet.java:225)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.handleRequest(AbstractHTTPServlet.java:301)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.doPost(AbstractHTTPServlet.java:220)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.service(AbstractHTTPServlet.java:276)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+09-04-2020 13:00:43.875 [http-nio-8080-exec-5] INFO  o.a.c.s.HelloServiceImpl1.FAULT_OUT.performLogging - FAULT_OUT
+    Content-Type: text/xml
+    ResponseCode: 500
+    ExchangeId: 66298f0d-6c33-4ed5-ae6c-a02d5437a6cb
+    ServiceName: HelloServiceImpl1Service
+    PortName: HelloServiceImpl1Port
+    PortTypeName: HelloServiceImpl1
+    Headers: {}
+    Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <soap:Fault>
+      <faultcode>soap:VersionMismatch</faultcode>
+      <faultstring>A SOAP 1.2 message is not valid when sent to a SOAP 1.1 only endpoint.</faultstring>
+    </soap:Fault>
+  </soap:Body>
+</soap:Envelope>
 
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-08-04-2020 19:35:16.682 [main] ERROR o.s.boot.SpringApplication.reportFailure - Application run failed
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'helloServiceEndpoint' defined in class path resource [com/example/demo/config/SoapWebServiceConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.xml.ws.Endpoint]: Factory method 'helloServiceEndpoint' threw exception; nested exception is java.lang.NoClassDefFoundError: javax.jws.WebService
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:656)
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:484)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
-	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$199.0000000000000000.getObject(Unknown Source)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:882)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
-	at com.example.demo.SoapWebserviceApplication.main(SoapWebserviceApplication.java:10)
-Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.xml.ws.Endpoint]: Factory method 'helloServiceEndpoint' threw exception; nested exception is java.lang.NoClassDefFoundError: javax.jws.WebService
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:651)
-	... 20 common frames omitted
-Caused by: java.lang.NoClassDefFoundError: javax.jws.WebService
-	at org.apache.cxf.jaxws.support.JaxWsImplementorInfo.initialize(JaxWsImplementorInfo.java:273)
-	at org.apache.cxf.jaxws.support.JaxWsImplementorInfo.<init>(JaxWsImplementorInfo.java:60)
-	at org.apache.cxf.jaxws.EndpointImpl.getServer(EndpointImpl.java:403)
-	at org.apache.cxf.jaxws.EndpointImpl.doPublish(EndpointImpl.java:338)
-	at org.apache.cxf.jaxws.EndpointImpl.publish(EndpointImpl.java:255)
-	at com.example.demo.config.SoapWebServiceConfig.helloServiceEndpoint(SoapWebServiceConfig.java:52)
-	at com.example.demo.config.SoapWebServiceConfig$$EnhancerBySpringCGLIB$$6e8b86d5.CGLIB$helloServiceEndpoint$2(<generated>)
-	at com.example.demo.config.SoapWebServiceConfig$$EnhancerBySpringCGLIB$$6e8b86d5$$FastClassBySpringCGLIB$$2905fd41.invoke(<generated>)
-	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
-	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
-	at com.example.demo.config.SoapWebServiceConfig$$EnhancerBySpringCGLIB$$6e8b86d5.helloServiceEndpoint(<generated>)
-	at com.example.demo.config.SoapWebServiceConfig$$FastClassBySpringCGLIB$$24f42ca0.invoke(<generated>)
-	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
-	at org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:62)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
-	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
-	at com.example.demo.config.SoapWebServiceConfig$$EnhancerBySpringCGLIB$$baefc201.helloServiceEndpoint(<generated>)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
-	... 21 common frames omitted
-Caused by: java.lang.ClassNotFoundException: javax.jws.WebService
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:766)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:1077)
-	... 50 common frames omitted
-08-04-2020 19:39:19.458 [main] INFO  c.e.demo.SoapWebserviceApplication.logStarting - Starting SoapWebserviceApplication on DESKTOP-RRKV833 with PID 2864 (E:\Dev64x\workspaces\spring-boot-workspace\apache-camel-web-app\spring-boot-camel-routing\soap-webservice\build\classes\java\main started by Amit in E:\Dev64x\workspaces\spring-boot-workspace\apache-camel-web-app\spring-boot-camel-routing\soap-webservice)
-08-04-2020 19:39:19.463 [main] INFO  c.e.demo.SoapWebserviceApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
-08-04-2020 19:39:20.747 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
-08-04-2020 19:39:20.753 [main] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
-08-04-2020 19:39:20.754 [main] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.33]
-08-04-2020 19:39:20.853 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
-08-04-2020 19:39:20.853 [main] INFO  o.s.web.context.ContextLoader.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1344 ms
-08-04-2020 19:39:21.426 [main] INFO  c.e.d.c.SoapWebServiceConfig$$EnhancerBySpringCGLIB$$77326bf6.bus - enabling logging of SOAP messages
-08-04-2020 19:39:21.446 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext.refresh - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'helloServiceEndpoint' defined in class path resource [com/example/demo/config/SoapWebServiceConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.xml.ws.Endpoint]: Factory method 'helloServiceEndpoint' threw exception; nested exception is java.lang.NoClassDefFoundError: javax.jws.WebService
-08-04-2020 19:39:21.449 [main] INFO  o.a.catalina.core.StandardService.log - Stopping service [Tomcat]
-08-04-2020 19:39:21.454 [main] WARN  o.a.c.loader.WebappClassLoaderBase.log - The web application [ROOT] appears to have started a thread named [MemoryMXBean notification dispatcher] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- jdk.management/com.ibm.lang.management.internal.MemoryNotificationThread.processNotificationLoop(Native Method)
- jdk.management/com.ibm.lang.management.internal.MemoryNotificationThread.run(MemoryNotificationThread.java:183)
-08-04-2020 19:39:21.466 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener.logMessage - 
 
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-08-04-2020 19:39:21.475 [main] ERROR o.s.boot.SpringApplication.reportFailure - Application run failed
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'helloServiceEndpoint' defined in class path resource [com/example/demo/config/SoapWebServiceConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.xml.ws.Endpoint]: Factory method 'helloServiceEndpoint' threw exception; nested exception is java.lang.NoClassDefFoundError: javax.jws.WebService
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:656)
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:484)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
-	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$199.0000000000000000.getObject(Unknown Source)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:882)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
-	at com.example.demo.SoapWebserviceApplication.main(SoapWebserviceApplication.java:10)
-Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.xml.ws.Endpoint]: Factory method 'helloServiceEndpoint' threw exception; nested exception is java.lang.NoClassDefFoundError: javax.jws.WebService
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:651)
-	... 20 common frames omitted
-Caused by: java.lang.NoClassDefFoundError: javax.jws.WebService
-	at org.apache.cxf.jaxws.support.JaxWsImplementorInfo.initialize(JaxWsImplementorInfo.java:273)
-	at org.apache.cxf.jaxws.support.JaxWsImplementorInfo.<init>(JaxWsImplementorInfo.java:60)
-	at org.apache.cxf.jaxws.EndpointImpl.getServer(EndpointImpl.java:403)
-	at org.apache.cxf.jaxws.EndpointImpl.doPublish(EndpointImpl.java:338)
-	at org.apache.cxf.jaxws.EndpointImpl.publish(EndpointImpl.java:255)
-	at com.example.demo.config.SoapWebServiceConfig.helloServiceEndpoint(SoapWebServiceConfig.java:52)
-	at com.example.demo.config.SoapWebServiceConfig$$EnhancerBySpringCGLIB$$77326bf6.CGLIB$helloServiceEndpoint$2(<generated>)
-	at com.example.demo.config.SoapWebServiceConfig$$EnhancerBySpringCGLIB$$77326bf6$$FastClassBySpringCGLIB$$45b9dd4.invoke(<generated>)
-	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
-	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
-	at com.example.demo.config.SoapWebServiceConfig$$EnhancerBySpringCGLIB$$77326bf6.helloServiceEndpoint(<generated>)
-	at com.example.demo.config.SoapWebServiceConfig$$FastClassBySpringCGLIB$$24f42ca0.invoke(<generated>)
-	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
-	at org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:62)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
-	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
-	at com.example.demo.config.SoapWebServiceConfig$$EnhancerBySpringCGLIB$$cbfef5e8.helloServiceEndpoint(<generated>)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
-	... 21 common frames omitted
-Caused by: java.lang.ClassNotFoundException: javax.jws.WebService
+09-04-2020 15:33:36.667 [main] INFO  c.e.demo.SoapWebserviceApplication.logStarting - Starting SoapWebserviceApplication on DESKTOP-RRKV833 with PID 12816 (E:\Dev64x\workspaces\spring-boot-workspace\spring-boot-samples\soap-webservice\build\classes\java\main started by Amit in E:\Dev64x\workspaces\spring-boot-workspace\spring-boot-samples\soap-webservice)
+09-04-2020 15:33:36.670 [main] INFO  c.e.demo.SoapWebserviceApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+09-04-2020 15:33:37.948 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
+09-04-2020 15:33:37.955 [main] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+09-04-2020 15:33:37.956 [main] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.33]
+09-04-2020 15:33:38.220 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+09-04-2020 15:33:38.220 [main] INFO  o.s.web.context.ContextLoader.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1521 ms
+09-04-2020 15:33:38.679 [main] INFO  c.e.d.c.SoapWebServiceConfig$$EnhancerBySpringCGLIB$$215c937.bus - enabling logging of SOAP messages
+09-04-2020 15:33:38.703 [main] INFO  o.a.c.w.s.f.ReflectionServiceFactoryBean.buildServiceFromClass - Creating Service {http://impl.service.demo.example.com/}HelloServiceImpl1Service from class com.example.demo.service.impl.HelloServiceImpl1
+09-04-2020 15:33:38.890 [main] INFO  org.apache.cxf.endpoint.ServerImpl.initDestination - Setting the server's publish address to be /hello
+09-04-2020 15:33:38.896 [main] INFO  c.e.d.c.SoapWebServiceConfig$$EnhancerBySpringCGLIB$$215c937.helloServiceEndpoint - publishing HelloService on /hello
+09-04-2020 15:33:38.899 [main] INFO  o.a.c.w.s.f.ReflectionServiceFactoryBean.buildServiceFromClass - Creating Service {http://impl.service.demo.example.com/}HelloServiceImpl2Service from class com.example.demo.service.impl.HelloServiceImpl2
+09-04-2020 15:33:38.900 [main] INFO  org.apache.cxf.endpoint.ServerImpl.initDestination - Setting the server's publish address to be /hello2
+09-04-2020 15:33:38.901 [main] INFO  c.e.d.c.SoapWebServiceConfig$$EnhancerBySpringCGLIB$$215c937.helloServiceEndpoint2 - publishing HelloServiceImpl2 on /hello2
+09-04-2020 15:33:39.013 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService 'applicationTaskExecutor'
+09-04-2020 15:33:39.067 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping.<init> - Adding welcome page: class path resource [static/index.html]
+09-04-2020 15:33:39.198 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver.<init> - Exposing 2 endpoint(s) beneath base path '/actuator'
+09-04-2020 15:33:39.246 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port(s): 8080 (http) with context path ''
+09-04-2020 15:33:39.248 [main] INFO  c.e.demo.SoapWebserviceApplication.logStarted - Started SoapWebserviceApplication in 2.887 seconds (JVM running for 4.014)
+09-04-2020 15:33:39.341 [http-nio-8080-exec-1] INFO  o.a.c.s.HelloServiceImpl1.REQ_IN.performLogging - REQ_IN
+    Address: http://localhost:8080/services/hello
+    HttpMethod: GET
+    ExchangeId: 9e052d44-3b3a-4222-974c-70d9440bd9ae
+    ServiceName: HelloServiceImpl1Service
+    PortName: HelloServiceImpl1Port
+    PortTypeName: HelloServiceImpl1
+    Headers: {sec-fetch-mode=navigate, sec-fetch-site=cross-site, Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9, accept-language=en-US,en;q=0.9, cookie=_ga=GA1.1.251404088.1571076052, host=localhost:8080, upgrade-insecure-requests=1, connection=keep-alive, cache-control=max-age=0, accept-encoding=gzip, deflate, br, sec-fetch-dest=document, user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36}
+
+09-04-2020 15:33:39.342 [http-nio-8080-exec-1] ERROR o.a.c.s.invoker.AbstractInvoker.invoke - Invocation without a binding operation.
+09-04-2020 15:33:39.349 [http-nio-8080-exec-1] WARN  o.a.cxf.phase.PhaseInterceptorChain.doLog - Interceptor for {http://impl.service.demo.example.com/}HelloServiceImpl1Service has thrown exception, unwinding now
+org.apache.cxf.interceptor.Fault: No binding operation info while invoking unknown method with params unknown.
+	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:58)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor$1.run(ServiceInvokerInterceptor.java:59)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor$2.run(ServiceInvokerInterceptor.java:126)
+	at org.apache.cxf.workqueue.SynchronousExecutor.execute(SynchronousExecutor.java:37)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor.handleMessage(ServiceInvokerInterceptor.java:131)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:308)
+	at org.apache.cxf.transport.ChainInitiationObserver.onMessage(ChainInitiationObserver.java:121)
+	at org.apache.cxf.transport.http.AbstractHTTPDestination.invoke(AbstractHTTPDestination.java:267)
+	at org.apache.cxf.transport.servlet.ServletController.invokeDestination(ServletController.java:234)
+	at org.apache.cxf.transport.servlet.ServletController.invoke(ServletController.java:208)
+	at org.apache.cxf.transport.servlet.ServletController.invoke(ServletController.java:160)
+	at org.apache.cxf.transport.servlet.CXFNonSpringServlet.invoke(CXFNonSpringServlet.java:225)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.handleRequest(AbstractHTTPServlet.java:301)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.doGet(AbstractHTTPServlet.java:225)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.service(AbstractHTTPServlet.java:276)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+09-04-2020 15:33:39.416 [http-nio-8080-exec-1] INFO  o.a.c.s.HelloServiceImpl1.FAULT_OUT.performLogging - FAULT_OUT
+    Content-Type: text/xml
+    ResponseCode: 500
+    ExchangeId: 9e052d44-3b3a-4222-974c-70d9440bd9ae
+    ServiceName: HelloServiceImpl1Service
+    PortName: HelloServiceImpl1Port
+    PortTypeName: HelloServiceImpl1
+    Headers: {}
+    Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <soap:Fault>
+      <faultcode>soap:Server</faultcode>
+      <faultstring>No binding operation info while invoking unknown method with params unknown.</faultstring>
+    </soap:Fault>
+  </soap:Body>
+</soap:Envelope>
+
+
+09-04-2020 15:33:39.714 [RMI TCP Connection(1)-192.168.1.4] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+09-04-2020 15:33:39.714 [RMI TCP Connection(1)-192.168.1.4] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Initializing Servlet 'dispatcherServlet'
+09-04-2020 15:33:39.721 [RMI TCP Connection(1)-192.168.1.4] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Completed initialization in 6 ms
+09-04-2020 15:43:58.376 [main] INFO  c.e.demo.SoapWebserviceApplication.logStarting - Starting SoapWebserviceApplication on DESKTOP-RRKV833 with PID 19188 (E:\Dev64x\workspaces\spring-boot-workspace\spring-boot-samples\soap-webservice\build\classes\java\main started by Amit in E:\Dev64x\workspaces\spring-boot-workspace\spring-boot-samples\soap-webservice)
+09-04-2020 15:43:58.378 [main] INFO  c.e.demo.SoapWebserviceApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+09-04-2020 15:43:59.403 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
+09-04-2020 15:43:59.409 [main] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+09-04-2020 15:43:59.410 [main] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.33]
+09-04-2020 15:43:59.502 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+09-04-2020 15:43:59.502 [main] INFO  o.s.web.context.ContextLoader.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1095 ms
+09-04-2020 15:43:59.955 [main] INFO  c.e.d.c.SoapWebServiceConfig$$EnhancerBySpringCGLIB$$9879a230.bus - enabling logging of SOAP messages
+09-04-2020 15:43:59.977 [main] INFO  o.a.c.w.s.f.ReflectionServiceFactoryBean.buildServiceFromClass - Creating Service {http://impl.service.demo.example.com/}HelloServiceImpl1Service from class com.example.demo.service.impl.HelloServiceImpl1
+09-04-2020 15:44:00.162 [main] INFO  org.apache.cxf.endpoint.ServerImpl.initDestination - Setting the server's publish address to be /hello
+09-04-2020 15:44:00.168 [main] INFO  c.e.d.c.SoapWebServiceConfig$$EnhancerBySpringCGLIB$$9879a230.helloServiceEndpoint - publishing HelloService on /hello
+09-04-2020 15:44:00.171 [main] INFO  o.a.c.w.s.f.ReflectionServiceFactoryBean.buildServiceFromClass - Creating Service {http://impl.service.demo.example.com/}HelloServiceImpl2Service from class com.example.demo.service.impl.HelloServiceImpl2
+09-04-2020 15:44:00.172 [main] INFO  org.apache.cxf.endpoint.ServerImpl.initDestination - Setting the server's publish address to be /hello2
+09-04-2020 15:44:00.172 [main] INFO  c.e.d.c.SoapWebServiceConfig$$EnhancerBySpringCGLIB$$9879a230.helloServiceEndpoint2 - publishing HelloServiceImpl2 on /hello2
+09-04-2020 15:44:00.279 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService 'applicationTaskExecutor'
+09-04-2020 15:44:00.340 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping.<init> - Adding welcome page: class path resource [static/index.html]
+09-04-2020 15:44:00.464 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver.<init> - Exposing 2 endpoint(s) beneath base path '/actuator'
+09-04-2020 15:44:00.507 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port(s): 8080 (http) with context path ''
+09-04-2020 15:44:00.510 [main] INFO  c.e.demo.SoapWebserviceApplication.logStarted - Started SoapWebserviceApplication in 2.429 seconds (JVM running for 3.278)
+09-04-2020 15:44:00.689 [RMI TCP Connection(1)-192.168.1.4] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+09-04-2020 15:44:00.690 [RMI TCP Connection(1)-192.168.1.4] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Initializing Servlet 'dispatcherServlet'
+09-04-2020 15:44:00.696 [RMI TCP Connection(1)-192.168.1.4] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Completed initialization in 6 ms
+09-04-2020 15:46:21.535 [main] INFO  c.e.demo.SoapWebserviceApplication.logStarting - Starting SoapWebserviceApplication on DESKTOP-RRKV833 with PID 19512 (E:\Dev64x\workspaces\spring-boot-workspace\spring-boot-samples\soap-webservice\build\classes\java\main started by Amit in E:\Dev64x\workspaces\spring-boot-workspace\spring-boot-samples\soap-webservice)
+09-04-2020 15:46:21.538 [main] INFO  c.e.demo.SoapWebserviceApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+09-04-2020 15:46:22.560 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
+09-04-2020 15:46:22.566 [main] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+09-04-2020 15:46:22.566 [main] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.33]
+09-04-2020 15:46:22.662 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+09-04-2020 15:46:22.662 [main] INFO  o.s.web.context.ContextLoader.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1089 ms
+09-04-2020 15:46:23.124 [main] INFO  c.e.d.c.SoapWebServiceConfig$$EnhancerBySpringCGLIB$$919487e8.bus - enabling logging of SOAP messages
+09-04-2020 15:46:23.146 [main] INFO  o.a.c.w.s.f.ReflectionServiceFactoryBean.buildServiceFromClass - Creating Service {http://impl.service.demo.example.com/}HelloServiceImpl1Service from class com.example.demo.service.impl.HelloServiceImpl1
+09-04-2020 15:46:23.323 [main] INFO  org.apache.cxf.endpoint.ServerImpl.initDestination - Setting the server's publish address to be /hello
+09-04-2020 15:46:23.330 [main] INFO  c.e.d.c.SoapWebServiceConfig$$EnhancerBySpringCGLIB$$919487e8.helloServiceEndpoint - publishing HelloService on /hello
+09-04-2020 15:46:23.333 [main] INFO  o.a.c.w.s.f.ReflectionServiceFactoryBean.buildServiceFromClass - Creating Service {http://impl.service.demo.example.com/}HelloServiceImpl2Service from class com.example.demo.service.impl.HelloServiceImpl2
+09-04-2020 15:46:23.335 [main] INFO  org.apache.cxf.endpoint.ServerImpl.initDestination - Setting the server's publish address to be /hello2
+09-04-2020 15:46:23.335 [main] INFO  c.e.d.c.SoapWebServiceConfig$$EnhancerBySpringCGLIB$$919487e8.helloServiceEndpoint2 - publishing HelloServiceImpl2 on /hello2
+09-04-2020 15:46:23.446 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService 'applicationTaskExecutor'
+09-04-2020 15:46:23.509 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping.<init> - Adding welcome page: class path resource [static/index.html]
+09-04-2020 15:46:23.632 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver.<init> - Exposing 2 endpoint(s) beneath base path '/actuator'
+09-04-2020 15:46:23.678 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port(s): 8080 (http) with context path ''
+09-04-2020 15:46:23.680 [main] INFO  c.e.demo.SoapWebserviceApplication.logStarted - Started SoapWebserviceApplication in 2.446 seconds (JVM running for 3.335)
+09-04-2020 15:46:23.846 [RMI TCP Connection(1)-192.168.1.4] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+09-04-2020 15:46:23.846 [RMI TCP Connection(1)-192.168.1.4] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Initializing Servlet 'dispatcherServlet'
+09-04-2020 15:46:23.852 [RMI TCP Connection(1)-192.168.1.4] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Completed initialization in 6 ms
+09-04-2020 15:46:54.113 [main] INFO  c.e.demo.SoapWebserviceApplication.logStarting - Starting SoapWebserviceApplication on DESKTOP-RRKV833 with PID 3196 (E:\Dev64x\workspaces\spring-boot-workspace\spring-boot-samples\soap-webservice\build\classes\java\main started by Amit in E:\Dev64x\workspaces\spring-boot-workspace\spring-boot-samples\soap-webservice)
+09-04-2020 15:46:54.115 [main] INFO  c.e.demo.SoapWebserviceApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+09-04-2020 15:46:55.136 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
+09-04-2020 15:46:55.142 [main] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+09-04-2020 15:46:55.143 [main] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.33]
+09-04-2020 15:46:55.243 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+09-04-2020 15:46:55.243 [main] INFO  o.s.web.context.ContextLoader.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1099 ms
+09-04-2020 15:46:55.715 [main] INFO  c.e.d.c.SoapWebServiceConfig$$EnhancerBySpringCGLIB$$1a6df272.bus - enabling logging of SOAP messages
+09-04-2020 15:46:55.738 [main] INFO  o.a.c.w.s.f.ReflectionServiceFactoryBean.buildServiceFromClass - Creating Service {http://impl.service.demo.example.com/}HelloServiceImpl1Service from class com.example.demo.service.impl.HelloServiceImpl1
+09-04-2020 15:46:55.913 [main] INFO  org.apache.cxf.endpoint.ServerImpl.initDestination - Setting the server's publish address to be /hello
+09-04-2020 15:46:55.919 [main] INFO  c.e.d.c.SoapWebServiceConfig$$EnhancerBySpringCGLIB$$1a6df272.helloServiceEndpoint - publishing HelloService on /hello
+09-04-2020 15:46:55.923 [main] INFO  o.a.c.w.s.f.ReflectionServiceFactoryBean.buildServiceFromClass - Creating Service {http://impl.service.demo.example.com/}HelloServiceImpl2Service from class com.example.demo.service.impl.HelloServiceImpl2
+09-04-2020 15:46:55.924 [main] INFO  org.apache.cxf.endpoint.ServerImpl.initDestination - Setting the server's publish address to be /hello2
+09-04-2020 15:46:55.925 [main] INFO  c.e.d.c.SoapWebServiceConfig$$EnhancerBySpringCGLIB$$1a6df272.helloServiceEndpoint2 - publishing HelloServiceImpl2 on /hello2
+09-04-2020 15:46:56.040 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService 'applicationTaskExecutor'
+09-04-2020 15:46:56.102 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping.<init> - Adding welcome page: class path resource [static/index.html]
+09-04-2020 15:46:56.223 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver.<init> - Exposing 2 endpoint(s) beneath base path '/actuator'
+09-04-2020 15:46:56.267 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port(s): 8080 (http) with context path ''
+09-04-2020 15:46:56.269 [main] INFO  c.e.demo.SoapWebserviceApplication.logStarted - Started SoapWebserviceApplication in 2.452 seconds (JVM running for 3.312)
+09-04-2020 15:46:56.749 [RMI TCP Connection(2)-192.168.1.4] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+09-04-2020 15:46:56.749 [RMI TCP Connection(2)-192.168.1.4] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Initializing Servlet 'dispatcherServlet'
+09-04-2020 15:46:56.755 [RMI TCP Connection(2)-192.168.1.4] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Completed initialization in 6 ms
+09-04-2020 15:48:20.272 [main] INFO  c.e.demo.SoapWebserviceApplication.logStarting - Starting SoapWebserviceApplication on DESKTOP-RRKV833 with PID 20552 (E:\Dev64x\workspaces\spring-boot-workspace\spring-boot-samples\soap-webservice\build\classes\java\main started by Amit in E:\Dev64x\workspaces\spring-boot-workspace\spring-boot-samples\soap-webservice)
+09-04-2020 15:48:20.275 [main] INFO  c.e.demo.SoapWebserviceApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+09-04-2020 15:48:21.336 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
+09-04-2020 15:48:21.343 [main] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+09-04-2020 15:48:21.343 [main] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.33]
+09-04-2020 15:48:21.445 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+09-04-2020 15:48:21.446 [main] INFO  o.s.web.context.ContextLoader.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1139 ms
+09-04-2020 15:48:21.903 [main] INFO  c.e.d.c.SoapWebServiceConfig$$EnhancerBySpringCGLIB$$1f6d2ce5.bus - enabling logging of SOAP messages
+09-04-2020 15:48:21.925 [main] INFO  o.a.c.w.s.f.ReflectionServiceFactoryBean.buildServiceFromClass - Creating Service {http://impl.service.demo.example.com/}HelloServiceImpl1Service from class com.example.demo.service.impl.HelloServiceImpl1
+09-04-2020 15:48:22.106 [main] INFO  org.apache.cxf.endpoint.ServerImpl.initDestination - Setting the server's publish address to be /hello
+09-04-2020 15:48:22.113 [main] INFO  c.e.d.c.SoapWebServiceConfig$$EnhancerBySpringCGLIB$$1f6d2ce5.helloServiceEndpoint - publishing HelloService on /hello
+09-04-2020 15:48:22.116 [main] INFO  o.a.c.w.s.f.ReflectionServiceFactoryBean.buildServiceFromClass - Creating Service {http://impl.service.demo.example.com/}HelloServiceImpl2Service from class com.example.demo.service.impl.HelloServiceImpl2
+09-04-2020 15:48:22.117 [main] INFO  org.apache.cxf.endpoint.ServerImpl.initDestination - Setting the server's publish address to be /hello2
+09-04-2020 15:48:22.118 [main] INFO  c.e.d.c.SoapWebServiceConfig$$EnhancerBySpringCGLIB$$1f6d2ce5.helloServiceEndpoint2 - publishing HelloServiceImpl2 on /hello2
+09-04-2020 15:48:22.228 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService 'applicationTaskExecutor'
+09-04-2020 15:48:22.292 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping.<init> - Adding welcome page: class path resource [static/index.html]
+09-04-2020 15:48:22.415 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver.<init> - Exposing 2 endpoint(s) beneath base path '/actuator'
+09-04-2020 15:48:22.459 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port(s): 8080 (http) with context path ''
+09-04-2020 15:48:22.461 [main] INFO  c.e.demo.SoapWebserviceApplication.logStarted - Started SoapWebserviceApplication in 2.505 seconds (JVM running for 3.376)
+09-04-2020 15:48:22.952 [RMI TCP Connection(2)-192.168.1.4] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+09-04-2020 15:48:22.953 [RMI TCP Connection(2)-192.168.1.4] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Initializing Servlet 'dispatcherServlet'
+09-04-2020 15:48:22.958 [RMI TCP Connection(2)-192.168.1.4] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Completed initialization in 5 ms
+09-04-2020 16:06:11.954 [main] INFO  c.e.demo.SoapWebserviceApplication.logStarting - Starting SoapWebserviceApplication on DESKTOP-RRKV833 with PID 19520 (E:\Dev64x\workspaces\spring-boot-workspace\spring-boot-samples\soap-webservice\build\classes\java\main started by Amit in E:\Dev64x\workspaces\spring-boot-workspace\spring-boot-samples\soap-webservice)
+09-04-2020 16:06:11.957 [main] INFO  c.e.demo.SoapWebserviceApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+09-04-2020 16:06:13.285 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
+09-04-2020 16:06:13.292 [main] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+09-04-2020 16:06:13.292 [main] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.33]
+09-04-2020 16:06:13.424 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+09-04-2020 16:06:13.425 [main] INFO  o.s.web.context.ContextLoader.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1425 ms
+09-04-2020 16:06:13.525 [main] WARN  javax.persistence.spi.log - javax.persistence.spi::No valid providers found.
+09-04-2020 16:06:13.965 [main] INFO  c.e.d.c.SoapWebServiceConfig$$EnhancerBySpringCGLIB$$60d05dc5.bus - enabling logging of SOAP messages
+09-04-2020 16:06:13.991 [main] INFO  o.a.c.w.s.f.ReflectionServiceFactoryBean.buildServiceFromClass - Creating Service {http://service.demo.example.com/}HelloService from class com.example.demo.service.HelloService
+09-04-2020 16:06:14.294 [main] INFO  org.apache.cxf.endpoint.ServerImpl.initDestination - Setting the server's publish address to be /hello
+09-04-2020 16:06:14.303 [main] INFO  c.e.d.c.SoapWebServiceConfig$$EnhancerBySpringCGLIB$$60d05dc5.helloServiceEndpoint - publishing HelloService on /hello
+09-04-2020 16:06:14.311 [main] INFO  o.a.c.w.s.f.ReflectionServiceFactoryBean.buildServiceFromClass - Creating Service {http://impl.service.demo.example.com/}HelloServiceImpl2Service from class com.example.demo.service.HelloService
+09-04-2020 16:06:14.313 [main] INFO  org.apache.cxf.endpoint.ServerImpl.initDestination - Setting the server's publish address to be /hello2
+09-04-2020 16:06:14.314 [main] INFO  c.e.d.c.SoapWebServiceConfig$$EnhancerBySpringCGLIB$$60d05dc5.helloServiceEndpoint2 - publishing HelloServiceImpl2 on /hello2
+09-04-2020 16:06:14.471 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService 'applicationTaskExecutor'
+09-04-2020 16:06:14.536 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping.<init> - Adding welcome page: class path resource [static/index.html]
+09-04-2020 16:06:14.727 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver.<init> - Exposing 2 endpoint(s) beneath base path '/actuator'
+09-04-2020 16:06:14.877 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port(s): 8080 (http) with context path ''
+09-04-2020 16:06:14.880 [main] INFO  c.e.demo.SoapWebserviceApplication.logStarted - Started SoapWebserviceApplication in 3.229 seconds (JVM running for 4.322)
+09-04-2020 16:06:37.898 [http-nio-8080-exec-3] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+09-04-2020 16:06:37.899 [http-nio-8080-exec-3] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Initializing Servlet 'dispatcherServlet'
+09-04-2020 16:06:37.913 [http-nio-8080-exec-3] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Completed initialization in 14 ms
+09-04-2020 16:10:05.292 [main] INFO  c.e.demo.SoapWebserviceApplication.logStarting - Starting SoapWebserviceApplication on DESKTOP-RRKV833 with PID 9372 (E:\Dev64x\workspaces\spring-boot-workspace\spring-boot-samples\soap-webservice\build\classes\java\main started by Amit in E:\Dev64x\workspaces\spring-boot-workspace\spring-boot-samples\soap-webservice)
+09-04-2020 16:10:05.296 [main] INFO  c.e.demo.SoapWebserviceApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+09-04-2020 16:10:06.621 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
+09-04-2020 16:10:06.628 [main] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+09-04-2020 16:10:06.629 [main] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.33]
+09-04-2020 16:10:06.752 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+09-04-2020 16:10:06.752 [main] INFO  o.s.web.context.ContextLoader.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1405 ms
+09-04-2020 16:10:06.852 [main] WARN  javax.persistence.spi.log - javax.persistence.spi::No valid providers found.
+09-04-2020 16:10:07.279 [main] INFO  c.e.d.c.SoapWebServiceConfig$$EnhancerBySpringCGLIB$$4433e591.bus - enabling logging of SOAP messages
+09-04-2020 16:10:07.304 [main] INFO  o.a.c.w.s.f.ReflectionServiceFactoryBean.buildServiceFromClass - Creating Service {http://service.demo.example.com/}HelloService from class com.example.demo.service.HelloService
+09-04-2020 16:10:07.593 [main] INFO  org.apache.cxf.endpoint.ServerImpl.initDestination - Setting the server's publish address to be /hello
+09-04-2020 16:10:07.600 [main] INFO  c.e.d.c.SoapWebServiceConfig$$EnhancerBySpringCGLIB$$4433e591.helloServiceEndpoint - publishing HelloService on /hello
+09-04-2020 16:10:07.607 [main] INFO  o.a.c.w.s.f.ReflectionServiceFactoryBean.buildServiceFromClass - Creating Service {http://impl.service.demo.example.com/}HelloServiceImpl2Service from class com.example.demo.service.HelloService
+09-04-2020 16:10:07.610 [main] INFO  org.apache.cxf.endpoint.ServerImpl.initDestination - Setting the server's publish address to be /hello2
+09-04-2020 16:10:07.611 [main] INFO  c.e.d.c.SoapWebServiceConfig$$EnhancerBySpringCGLIB$$4433e591.helloServiceEndpoint2 - publishing HelloServiceImpl2 on /hello2
+09-04-2020 16:10:07.769 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService 'applicationTaskExecutor'
+09-04-2020 16:10:07.842 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping.<init> - Adding welcome page: class path resource [static/index.html]
+09-04-2020 16:10:08.027 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver.<init> - Exposing 2 endpoint(s) beneath base path '/actuator'
+09-04-2020 16:10:08.087 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port(s): 8080 (http) with context path ''
+09-04-2020 16:10:08.090 [main] INFO  c.e.demo.SoapWebserviceApplication.logStarted - Started SoapWebserviceApplication in 3.104 seconds (JVM running for 3.948)
+09-04-2020 16:10:20.022 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+09-04-2020 16:10:20.023 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Initializing Servlet 'dispatcherServlet'
+09-04-2020 16:10:20.032 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Completed initialization in 9 ms
+09-04-2020 16:10:20.122 [http-nio-8080-exec-5] WARN  o.a.c.t.servlet.ServletController.invoke - Can't find the request for http://localhost:8080/services/hellosayHello's Observer 
+09-04-2020 16:10:42.877 [http-nio-8080-exec-7] WARN  o.a.c.t.servlet.ServletController.invoke - Can't find the request for http://localhost:8080/services/hellosayHello's Observer 
+09-04-2020 16:10:42.882 [http-nio-8080-exec-8] WARN  o.a.c.t.servlet.ServletController.invoke - Can't find the request for http://localhost:8080/services/hellosayHello's Observer 
+09-04-2020 16:10:54.993 [http-nio-8080-exec-9] INFO  org.apache.cxf.services.Hello.REQ_IN.performLogging - REQ_IN
+    Address: http://localhost:8080/services/hello
+    HttpMethod: GET
+    ExchangeId: a1177aec-305f-4e36-86e0-e0305e6858ca
+    ServiceName: HelloService
+    PortName: HelloPort
+    PortTypeName: Hello
+    Headers: {sec-fetch-mode=navigate, sec-fetch-site=none, Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9, accept-language=en-US,en;q=0.9, cookie=_ga=GA1.1.251404088.1571076052, host=localhost:8080, upgrade-insecure-requests=1, connection=keep-alive, sec-fetch-user=?1, accept-encoding=gzip, deflate, br, sec-fetch-dest=document, user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36}
+
+09-04-2020 16:10:54.995 [http-nio-8080-exec-9] ERROR o.a.c.s.invoker.AbstractInvoker.invoke - Invocation without a binding operation.
+09-04-2020 16:10:55.001 [http-nio-8080-exec-9] WARN  o.a.cxf.phase.PhaseInterceptorChain.doLog - Interceptor for {http://service.demo.example.com/}HelloService has thrown exception, unwinding now
+org.apache.cxf.interceptor.Fault: No binding operation info while invoking unknown method with params unknown.
+	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:58)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor$1.run(ServiceInvokerInterceptor.java:59)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor$2.run(ServiceInvokerInterceptor.java:126)
+	at org.apache.cxf.workqueue.SynchronousExecutor.execute(SynchronousExecutor.java:37)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor.handleMessage(ServiceInvokerInterceptor.java:131)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:308)
+	at org.apache.cxf.transport.ChainInitiationObserver.onMessage(ChainInitiationObserver.java:121)
+	at org.apache.cxf.transport.http.AbstractHTTPDestination.invoke(AbstractHTTPDestination.java:267)
+	at org.apache.cxf.transport.servlet.ServletController.invokeDestination(ServletController.java:234)
+	at org.apache.cxf.transport.servlet.ServletController.invoke(ServletController.java:208)
+	at org.apache.cxf.transport.servlet.ServletController.invoke(ServletController.java:160)
+	at org.apache.cxf.transport.servlet.CXFNonSpringServlet.invoke(CXFNonSpringServlet.java:225)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.handleRequest(AbstractHTTPServlet.java:301)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.doGet(AbstractHTTPServlet.java:225)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.service(AbstractHTTPServlet.java:276)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+09-04-2020 16:10:55.011 [http-nio-8080-exec-9] ERROR o.a.c.c.C.[.[.[/].[CXFServlet].log - Servlet.service() for servlet [CXFServlet] in context with path [] threw exception [Servlet execution threw an exception] with root cause
+java.lang.ClassNotFoundException: com.sun.activation.registries.LogSupport
 	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:766)
 	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:1077)
-	... 50 common frames omitted
-08-04-2020 19:42:26.884 [main] INFO  c.e.demo.SoapWebserviceApplication.logStarting - Starting SoapWebserviceApplication on DESKTOP-RRKV833 with PID 17056 (E:\Dev64x\workspaces\spring-boot-workspace\apache-camel-web-app\spring-boot-camel-routing\soap-webservice\build\classes\java\main started by Amit in E:\Dev64x\workspaces\spring-boot-workspace\apache-camel-web-app\spring-boot-camel-routing\soap-webservice)
-08-04-2020 19:42:26.887 [main] INFO  c.e.demo.SoapWebserviceApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
-08-04-2020 19:42:28.179 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
-08-04-2020 19:42:28.186 [main] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
-08-04-2020 19:42:28.186 [main] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.33]
-08-04-2020 19:42:28.439 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
-08-04-2020 19:42:28.439 [main] INFO  o.s.web.context.ContextLoader.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1515 ms
-08-04-2020 19:42:28.880 [main] INFO  c.e.d.c.SoapWebServiceConfig$$EnhancerBySpringCGLIB$$cd4155f6.bus - enabling logging of SOAP messages
-08-04-2020 19:42:28.904 [main] INFO  o.a.c.w.s.f.ReflectionServiceFactoryBean.buildServiceFromClass - Creating Service {http://impl.service.demo.example.com/}HelloServiceImpl1Service from class com.example.demo.service.impl.HelloServiceImpl1
-08-04-2020 19:42:29.094 [main] INFO  org.apache.cxf.endpoint.ServerImpl.initDestination - Setting the server's publish address to be /hello
-08-04-2020 19:42:29.100 [main] INFO  c.e.d.c.SoapWebServiceConfig$$EnhancerBySpringCGLIB$$cd4155f6.helloServiceEndpoint - publishing HelloService on /hello
-08-04-2020 19:42:29.104 [main] INFO  o.a.c.w.s.f.ReflectionServiceFactoryBean.buildServiceFromClass - Creating Service {http://impl.service.demo.example.com/}HelloServiceImpl2Service from class com.example.demo.service.impl.HelloServiceImpl2
-08-04-2020 19:42:29.105 [main] INFO  org.apache.cxf.endpoint.ServerImpl.initDestination - Setting the server's publish address to be /hello2
-08-04-2020 19:42:29.105 [main] INFO  c.e.d.c.SoapWebServiceConfig$$EnhancerBySpringCGLIB$$cd4155f6.helloServiceEndpoint2 - publishing HelloServiceImpl2 on /hello2
-08-04-2020 19:42:29.218 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService 'applicationTaskExecutor'
-08-04-2020 19:42:29.416 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver.<init> - Exposing 2 endpoint(s) beneath base path '/actuator'
-08-04-2020 19:42:29.471 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port(s): 8080 (http) with context path ''
-08-04-2020 19:42:29.473 [main] INFO  c.e.demo.SoapWebserviceApplication.logStarted - Started SoapWebserviceApplication in 2.916 seconds (JVM running for 4.135)
-08-04-2020 19:42:30.645 [RMI TCP Connection(3)-192.168.1.4] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring DispatcherServlet 'dispatcherServlet'
-08-04-2020 19:42:30.646 [RMI TCP Connection(3)-192.168.1.4] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Initializing Servlet 'dispatcherServlet'
-08-04-2020 19:42:30.652 [RMI TCP Connection(3)-192.168.1.4] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Completed initialization in 6 ms
+	at javax.activation.MailcapCommandMap.<init>(MailcapCommandMap.java:149)
+	at javax.activation.CommandMap.getDefaultCommandMap(CommandMap.java:55)
+	at org.apache.cxf.attachment.AttachmentUtil.<clinit>(AttachmentUtil.java:73)
+	at org.apache.cxf.interceptor.AttachmentOutInterceptor.handleMessage(AttachmentOutInterceptor.java:62)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:308)
+	at org.apache.cxf.interceptor.AbstractFaultChainInitiatorObserver.onMessage(AbstractFaultChainInitiatorObserver.java:112)
+	at org.apache.cxf.phase.PhaseInterceptorChain.wrapExceptionAsFault(PhaseInterceptorChain.java:374)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:332)
+	at org.apache.cxf.transport.ChainInitiationObserver.onMessage(ChainInitiationObserver.java:121)
+	at org.apache.cxf.transport.http.AbstractHTTPDestination.invoke(AbstractHTTPDestination.java:267)
+	at org.apache.cxf.transport.servlet.ServletController.invokeDestination(ServletController.java:234)
+	at org.apache.cxf.transport.servlet.ServletController.invoke(ServletController.java:208)
+	at org.apache.cxf.transport.servlet.ServletController.invoke(ServletController.java:160)
+	at org.apache.cxf.transport.servlet.CXFNonSpringServlet.invoke(CXFNonSpringServlet.java:225)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.handleRequest(AbstractHTTPServlet.java:301)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.doGet(AbstractHTTPServlet.java:225)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.service(AbstractHTTPServlet.java:276)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+09-04-2020 16:11:19.541 [http-nio-8080-exec-4] INFO  org.apache.cxf.services.Hello.REQ_IN.performLogging - REQ_IN
+    Address: http://localhost:8080/services/hello
+    HttpMethod: GET
+    ExchangeId: 2cd792f6-5895-4ec9-91da-f7544443dbaf
+    ServiceName: HelloService
+    PortName: HelloPort
+    PortTypeName: Hello
+    Headers: {sec-fetch-mode=navigate, sec-fetch-site=none, Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9, accept-language=en-US,en;q=0.9, cookie=_ga=GA1.1.251404088.1571076052, sec-fetch-user=?1, host=localhost:8080, upgrade-insecure-requests=1, connection=keep-alive, cache-control=max-age=0, accept-encoding=gzip, deflate, br, sec-fetch-dest=document, user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36}
+
+09-04-2020 16:11:19.542 [http-nio-8080-exec-4] ERROR o.a.c.s.invoker.AbstractInvoker.invoke - Invocation without a binding operation.
+09-04-2020 16:11:19.544 [http-nio-8080-exec-4] WARN  o.a.cxf.phase.PhaseInterceptorChain.doLog - Interceptor for {http://service.demo.example.com/}HelloService has thrown exception, unwinding now
+org.apache.cxf.interceptor.Fault: No binding operation info while invoking unknown method with params unknown.
+	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:58)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor$1.run(ServiceInvokerInterceptor.java:59)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor$2.run(ServiceInvokerInterceptor.java:126)
+	at org.apache.cxf.workqueue.SynchronousExecutor.execute(SynchronousExecutor.java:37)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor.handleMessage(ServiceInvokerInterceptor.java:131)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:308)
+	at org.apache.cxf.transport.ChainInitiationObserver.onMessage(ChainInitiationObserver.java:121)
+	at org.apache.cxf.transport.http.AbstractHTTPDestination.invoke(AbstractHTTPDestination.java:267)
+	at org.apache.cxf.transport.servlet.ServletController.invokeDestination(ServletController.java:234)
+	at org.apache.cxf.transport.servlet.ServletController.invoke(ServletController.java:208)
+	at org.apache.cxf.transport.servlet.ServletController.invoke(ServletController.java:160)
+	at org.apache.cxf.transport.servlet.CXFNonSpringServlet.invoke(CXFNonSpringServlet.java:225)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.handleRequest(AbstractHTTPServlet.java:301)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.doGet(AbstractHTTPServlet.java:225)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.service(AbstractHTTPServlet.java:276)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+09-04-2020 16:11:19.547 [http-nio-8080-exec-4] ERROR o.a.c.c.C.[.[.[/].[CXFServlet].log - Servlet.service() for servlet [CXFServlet] in context with path [] threw exception [Servlet execution threw an exception] with root cause
+java.lang.ClassNotFoundException: com.sun.activation.registries.LogSupport
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:766)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:1077)
+	at javax.activation.MailcapCommandMap.<init>(MailcapCommandMap.java:149)
+	at javax.activation.CommandMap.getDefaultCommandMap(CommandMap.java:55)
+	at org.apache.cxf.attachment.AttachmentUtil.<clinit>(AttachmentUtil.java:73)
+	at org.apache.cxf.interceptor.AttachmentOutInterceptor.handleMessage(AttachmentOutInterceptor.java:62)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:308)
+	at org.apache.cxf.interceptor.AbstractFaultChainInitiatorObserver.onMessage(AbstractFaultChainInitiatorObserver.java:112)
+	at org.apache.cxf.phase.PhaseInterceptorChain.wrapExceptionAsFault(PhaseInterceptorChain.java:374)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:332)
+	at org.apache.cxf.transport.ChainInitiationObserver.onMessage(ChainInitiationObserver.java:121)
+	at org.apache.cxf.transport.http.AbstractHTTPDestination.invoke(AbstractHTTPDestination.java:267)
+	at org.apache.cxf.transport.servlet.ServletController.invokeDestination(ServletController.java:234)
+	at org.apache.cxf.transport.servlet.ServletController.invoke(ServletController.java:208)
+	at org.apache.cxf.transport.servlet.ServletController.invoke(ServletController.java:160)
+	at org.apache.cxf.transport.servlet.CXFNonSpringServlet.invoke(CXFNonSpringServlet.java:225)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.handleRequest(AbstractHTTPServlet.java:301)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.doGet(AbstractHTTPServlet.java:225)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.service(AbstractHTTPServlet.java:276)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+09-04-2020 16:11:54.337 [main] INFO  c.e.demo.SoapWebserviceApplication.logStarting - Starting SoapWebserviceApplication on DESKTOP-RRKV833 with PID 800 (E:\Dev64x\workspaces\spring-boot-workspace\spring-boot-samples\soap-webservice\build\classes\java\main started by Amit in E:\Dev64x\workspaces\spring-boot-workspace\spring-boot-samples\soap-webservice)
+09-04-2020 16:11:54.342 [main] INFO  c.e.demo.SoapWebserviceApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+09-04-2020 16:11:55.676 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
+09-04-2020 16:11:55.689 [main] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+09-04-2020 16:11:55.689 [main] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.33]
+09-04-2020 16:11:55.824 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+09-04-2020 16:11:55.825 [main] INFO  o.s.web.context.ContextLoader.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1440 ms
+09-04-2020 16:11:55.930 [main] WARN  javax.persistence.spi.log - javax.persistence.spi::No valid providers found.
+09-04-2020 16:11:56.364 [main] INFO  c.e.d.c.SoapWebServiceConfig$$EnhancerBySpringCGLIB$$6bd1a4d8.bus - enabling logging of SOAP messages
+09-04-2020 16:11:56.392 [main] INFO  o.a.c.w.s.f.ReflectionServiceFactoryBean.buildServiceFromClass - Creating Service {http://service.demo.example.com/}HelloService from class com.example.demo.service.HelloService
+09-04-2020 16:11:56.655 [main] INFO  org.apache.cxf.endpoint.ServerImpl.initDestination - Setting the server's publish address to be /hello
+09-04-2020 16:11:56.662 [main] INFO  c.e.d.c.SoapWebServiceConfig$$EnhancerBySpringCGLIB$$6bd1a4d8.helloServiceEndpoint - publishing HelloService on /hello
+09-04-2020 16:11:56.672 [main] INFO  o.a.c.w.s.f.ReflectionServiceFactoryBean.buildServiceFromClass - Creating Service {http://impl.service.demo.example.com/}HelloServiceImpl2Service from class com.example.demo.service.HelloService
+09-04-2020 16:11:56.675 [main] INFO  org.apache.cxf.endpoint.ServerImpl.initDestination - Setting the server's publish address to be /hello2
+09-04-2020 16:11:56.675 [main] INFO  c.e.d.c.SoapWebServiceConfig$$EnhancerBySpringCGLIB$$6bd1a4d8.helloServiceEndpoint2 - publishing HelloServiceImpl2 on /hello2
+09-04-2020 16:11:56.852 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService 'applicationTaskExecutor'
+09-04-2020 16:11:56.928 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping.<init> - Adding welcome page: class path resource [static/index.html]
+09-04-2020 16:11:57.112 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver.<init> - Exposing 2 endpoint(s) beneath base path '/actuator'
+09-04-2020 16:11:57.179 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port(s): 8080 (http) with context path ''
+09-04-2020 16:11:57.182 [main] INFO  c.e.demo.SoapWebserviceApplication.logStarted - Started SoapWebserviceApplication in 3.151 seconds (JVM running for 3.992)
+09-04-2020 16:12:09.684 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+09-04-2020 16:12:09.685 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Initializing Servlet 'dispatcherServlet'
+09-04-2020 16:12:09.697 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Completed initialization in 12 ms
+09-04-2020 16:12:09.991 [http-nio-8080-exec-4] ERROR o.a.c.c.C.[.[.[/].[CXFServlet].log - Servlet.service() for servlet [CXFServlet] in context with path [] threw exception [Servlet execution threw an exception] with root cause
+java.lang.ClassNotFoundException: com.sun.activation.registries.LogSupport
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:766)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:1077)
+	at javax.activation.MailcapCommandMap.<init>(MailcapCommandMap.java:149)
+	at javax.activation.CommandMap.getDefaultCommandMap(CommandMap.java:55)
+	at org.apache.cxf.attachment.AttachmentUtil.<clinit>(AttachmentUtil.java:73)
+	at org.apache.cxf.interceptor.AttachmentInInterceptor.handleMessage(AttachmentInInterceptor.java:55)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:308)
+	at org.apache.cxf.transport.ChainInitiationObserver.onMessage(ChainInitiationObserver.java:121)
+	at org.apache.cxf.transport.http.AbstractHTTPDestination.invoke(AbstractHTTPDestination.java:267)
+	at org.apache.cxf.transport.servlet.ServletController.invokeDestination(ServletController.java:234)
+	at org.apache.cxf.transport.servlet.ServletController.invoke(ServletController.java:208)
+	at org.apache.cxf.transport.servlet.ServletController.invoke(ServletController.java:160)
+	at org.apache.cxf.transport.servlet.CXFNonSpringServlet.invoke(CXFNonSpringServlet.java:225)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.handleRequest(AbstractHTTPServlet.java:301)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.doPost(AbstractHTTPServlet.java:220)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.service(AbstractHTTPServlet.java:276)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+09-04-2020 16:31:20.740 [main] INFO  c.e.demo.SoapWebserviceApplication.logStarting - Starting SoapWebserviceApplication on DESKTOP-RRKV833 with PID 20368 (E:\Dev64x\workspaces\spring-boot-workspace\spring-boot-samples\soap-webservice\build\classes\java\main started by Amit in E:\Dev64x\workspaces\spring-boot-workspace\spring-boot-samples\soap-webservice)
+09-04-2020 16:31:20.743 [main] INFO  c.e.demo.SoapWebserviceApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+09-04-2020 16:31:22.117 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
+09-04-2020 16:31:22.125 [main] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+09-04-2020 16:31:22.125 [main] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.33]
+09-04-2020 16:31:22.267 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+09-04-2020 16:31:22.268 [main] INFO  o.s.web.context.ContextLoader.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1476 ms
+09-04-2020 16:31:22.374 [main] WARN  javax.persistence.spi.log - javax.persistence.spi::No valid providers found.
+09-04-2020 16:31:22.897 [main] INFO  c.e.d.c.SoapWebServiceConfig$$EnhancerBySpringCGLIB$$a2f4c4e1.bus - enabling logging of SOAP messages
+09-04-2020 16:31:22.927 [main] INFO  o.a.c.w.s.f.ReflectionServiceFactoryBean.buildServiceFromClass - Creating Service {http://service.demo.example.com/}HelloService from class com.example.demo.service.HelloService
+09-04-2020 16:31:23.214 [main] INFO  org.apache.cxf.endpoint.ServerImpl.initDestination - Setting the server's publish address to be /hello
+09-04-2020 16:31:23.222 [main] INFO  c.e.d.c.SoapWebServiceConfig$$EnhancerBySpringCGLIB$$a2f4c4e1.helloServiceEndpoint - publishing HelloService on /hello
+09-04-2020 16:31:23.231 [main] INFO  o.a.c.w.s.f.ReflectionServiceFactoryBean.buildServiceFromClass - Creating Service {http://impl.service.demo.example.com/}HelloServiceImpl2Service from class com.example.demo.service.HelloService
+09-04-2020 16:31:23.236 [main] INFO  org.apache.cxf.endpoint.ServerImpl.initDestination - Setting the server's publish address to be /hello2
+09-04-2020 16:31:23.237 [main] INFO  c.e.d.c.SoapWebServiceConfig$$EnhancerBySpringCGLIB$$a2f4c4e1.helloServiceEndpoint2 - publishing HelloServiceImpl2 on /hello2
+09-04-2020 16:31:23.410 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService 'applicationTaskExecutor'
+09-04-2020 16:31:23.485 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping.<init> - Adding welcome page: class path resource [static/index.html]
+09-04-2020 16:31:23.685 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver.<init> - Exposing 2 endpoint(s) beneath base path '/actuator'
+09-04-2020 16:31:23.760 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port(s): 8080 (http) with context path ''
+09-04-2020 16:31:23.763 [main] INFO  c.e.demo.SoapWebserviceApplication.logStarted - Started SoapWebserviceApplication in 3.33 seconds (JVM running for 4.196)
+09-04-2020 16:31:43.631 [http-nio-8080-exec-3] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+09-04-2020 16:31:43.632 [http-nio-8080-exec-3] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Initializing Servlet 'dispatcherServlet'
+09-04-2020 16:31:43.645 [http-nio-8080-exec-3] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Completed initialization in 13 ms
+09-04-2020 16:31:43.847 [http-nio-8080-exec-6] ERROR o.a.c.c.C.[.[.[/].[CXFServlet].log - Servlet.service() for servlet [CXFServlet] in context with path [] threw exception [Servlet execution threw an exception] with root cause
+java.lang.ClassNotFoundException: com.sun.activation.registries.LogSupport
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:766)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:1077)
+	at javax.activation.MailcapCommandMap.<init>(MailcapCommandMap.java:149)
+	at javax.activation.CommandMap.getDefaultCommandMap(CommandMap.java:55)
+	at org.apache.cxf.attachment.AttachmentUtil.<clinit>(AttachmentUtil.java:73)
+	at org.apache.cxf.interceptor.AttachmentInInterceptor.handleMessage(AttachmentInInterceptor.java:55)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:308)
+	at org.apache.cxf.transport.ChainInitiationObserver.onMessage(ChainInitiationObserver.java:121)
+	at org.apache.cxf.transport.http.AbstractHTTPDestination.invoke(AbstractHTTPDestination.java:267)
+	at org.apache.cxf.transport.servlet.ServletController.invokeDestination(ServletController.java:234)
+	at org.apache.cxf.transport.servlet.ServletController.invoke(ServletController.java:208)
+	at org.apache.cxf.transport.servlet.ServletController.invoke(ServletController.java:160)
+	at org.apache.cxf.transport.servlet.CXFNonSpringServlet.invoke(CXFNonSpringServlet.java:225)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.handleRequest(AbstractHTTPServlet.java:301)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.doPost(AbstractHTTPServlet.java:220)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.service(AbstractHTTPServlet.java:276)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+09-04-2020 17:08:58.345 [main] INFO  c.e.demo.SoapWebserviceApplication.logStarting - Starting SoapWebserviceApplication on DESKTOP-RRKV833 with PID 7944 (E:\Dev64x\workspaces\spring-boot-workspace\spring-boot-samples\soap-webservice\build\classes\java\main started by Amit in E:\Dev64x\workspaces\spring-boot-workspace\spring-boot-samples\soap-webservice)
+09-04-2020 17:08:58.349 [main] INFO  c.e.demo.SoapWebserviceApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+09-04-2020 17:08:59.675 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
+09-04-2020 17:08:59.684 [main] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+09-04-2020 17:08:59.684 [main] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.33]
+09-04-2020 17:08:59.803 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+09-04-2020 17:08:59.804 [main] INFO  o.s.web.context.ContextLoader.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1411 ms
+09-04-2020 17:08:59.907 [main] WARN  javax.persistence.spi.log - javax.persistence.spi::No valid providers found.
+09-04-2020 17:09:00.350 [main] INFO  c.e.d.c.SoapWebServiceConfig$$EnhancerBySpringCGLIB$$f6f7371b.bus - enabling logging of SOAP messages
+09-04-2020 17:09:00.381 [main] INFO  o.a.c.w.s.f.ReflectionServiceFactoryBean.buildServiceFromClass - Creating Service {http://service.demo.example.com/}HelloService from class com.example.demo.service.HelloService
+09-04-2020 17:09:00.655 [main] INFO  org.apache.cxf.endpoint.ServerImpl.initDestination - Setting the server's publish address to be /hello
+09-04-2020 17:09:00.662 [main] INFO  c.e.d.c.SoapWebServiceConfig$$EnhancerBySpringCGLIB$$f6f7371b.helloServiceEndpoint - publishing HelloService on /hello
+09-04-2020 17:09:00.670 [main] INFO  o.a.c.w.s.f.ReflectionServiceFactoryBean.buildServiceFromClass - Creating Service {http://impl.service.demo.example.com/}GenericWebServiceImplService from class com.example.demo.service.impl.GenericWebServiceImpl
+09-04-2020 17:09:00.672 [main] INFO  org.apache.cxf.endpoint.ServerImpl.initDestination - Setting the server's publish address to be /generic-web-service
+09-04-2020 17:09:00.673 [main] INFO  c.e.d.c.SoapWebServiceConfig$$EnhancerBySpringCGLIB$$f6f7371b.genericWebServiceEndpoint - publishing HelloServiceImpl2 on /generic-web-service
+09-04-2020 17:09:00.854 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService 'applicationTaskExecutor'
+09-04-2020 17:09:00.923 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping.<init> - Adding welcome page: class path resource [static/index.html]
+09-04-2020 17:09:01.110 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver.<init> - Exposing 2 endpoint(s) beneath base path '/actuator'
+09-04-2020 17:09:01.181 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port(s): 8080 (http) with context path ''
+09-04-2020 17:09:01.184 [main] INFO  c.e.demo.SoapWebserviceApplication.logStarted - Started SoapWebserviceApplication in 3.149 seconds (JVM running for 4.334)
+09-04-2020 17:15:23.311 [http-nio-8080-exec-8] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+09-04-2020 17:15:23.311 [http-nio-8080-exec-8] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Initializing Servlet 'dispatcherServlet'
+09-04-2020 17:15:23.322 [http-nio-8080-exec-8] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Completed initialization in 11 ms
+09-04-2020 17:19:49.562 [http-nio-8080-exec-2] ERROR o.a.c.c.C.[.[.[/].[CXFServlet].log - Servlet.service() for servlet [CXFServlet] in context with path [] threw exception [Servlet execution threw an exception] with root cause
+java.lang.ClassNotFoundException: com.sun.activation.registries.LogSupport
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:766)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:1077)
+	at javax.activation.MailcapCommandMap.<init>(MailcapCommandMap.java:149)
+	at javax.activation.CommandMap.getDefaultCommandMap(CommandMap.java:55)
+	at org.apache.cxf.attachment.AttachmentUtil.<clinit>(AttachmentUtil.java:73)
+	at org.apache.cxf.interceptor.AttachmentInInterceptor.handleMessage(AttachmentInInterceptor.java:55)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:308)
+	at org.apache.cxf.transport.ChainInitiationObserver.onMessage(ChainInitiationObserver.java:121)
+	at org.apache.cxf.transport.http.AbstractHTTPDestination.invoke(AbstractHTTPDestination.java:267)
+	at org.apache.cxf.transport.servlet.ServletController.invokeDestination(ServletController.java:234)
+	at org.apache.cxf.transport.servlet.ServletController.invoke(ServletController.java:208)
+	at org.apache.cxf.transport.servlet.ServletController.invoke(ServletController.java:160)
+	at org.apache.cxf.transport.servlet.CXFNonSpringServlet.invoke(CXFNonSpringServlet.java:225)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.handleRequest(AbstractHTTPServlet.java:301)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.doPost(AbstractHTTPServlet.java:220)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.service(AbstractHTTPServlet.java:276)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+09-04-2020 17:23:54.428 [main] INFO  c.e.demo.SoapWebserviceApplication.logStarting - Starting SoapWebserviceApplication on DESKTOP-RRKV833 with PID 17180 (E:\Dev64x\workspaces\spring-boot-workspace\spring-boot-samples\soap-webservice\build\classes\java\main started by Amit in E:\Dev64x\workspaces\spring-boot-workspace\spring-boot-samples\soap-webservice)
+09-04-2020 17:23:54.431 [main] INFO  c.e.demo.SoapWebserviceApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+09-04-2020 17:23:55.765 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
+09-04-2020 17:23:55.771 [main] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+09-04-2020 17:23:55.772 [main] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.33]
+09-04-2020 17:23:55.906 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+09-04-2020 17:23:55.906 [main] INFO  o.s.web.context.ContextLoader.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1431 ms
+09-04-2020 17:23:56.008 [main] WARN  javax.persistence.spi.log - javax.persistence.spi::No valid providers found.
+09-04-2020 17:23:56.458 [main] INFO  c.e.d.c.SoapWebServiceConfig$$EnhancerBySpringCGLIB$$e9d7e415.bus - enabling logging of SOAP messages
+09-04-2020 17:23:56.485 [main] INFO  o.a.c.w.s.f.ReflectionServiceFactoryBean.buildServiceFromClass - Creating Service {http://service.demo.example.com/}HelloService from class com.example.demo.service.HelloService
+09-04-2020 17:23:56.773 [main] INFO  org.apache.cxf.endpoint.ServerImpl.initDestination - Setting the server's publish address to be /hello
+09-04-2020 17:23:56.780 [main] INFO  c.e.d.c.SoapWebServiceConfig$$EnhancerBySpringCGLIB$$e9d7e415.helloServiceEndpoint - publishing HelloService on /hello
+09-04-2020 17:23:56.789 [main] INFO  o.a.c.w.s.f.ReflectionServiceFactoryBean.buildServiceFromClass - Creating Service {http://impl.service.demo.example.com/}GenericWebServiceImplService from class com.example.demo.service.impl.GenericWebServiceImpl
+09-04-2020 17:23:56.792 [main] INFO  org.apache.cxf.endpoint.ServerImpl.initDestination - Setting the server's publish address to be /generic-web-service
+09-04-2020 17:23:56.792 [main] INFO  c.e.d.c.SoapWebServiceConfig$$EnhancerBySpringCGLIB$$e9d7e415.genericWebServiceEndpoint - publishing HelloServiceImpl2 on /generic-web-service
+09-04-2020 17:23:56.956 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService 'applicationTaskExecutor'
+09-04-2020 17:23:57.026 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping.<init> - Adding welcome page: class path resource [static/index.html]
+09-04-2020 17:23:57.210 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver.<init> - Exposing 2 endpoint(s) beneath base path '/actuator'
+09-04-2020 17:23:57.276 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port(s): 8080 (http) with context path ''
+09-04-2020 17:23:57.279 [main] INFO  c.e.demo.SoapWebserviceApplication.logStarted - Started SoapWebserviceApplication in 3.161 seconds (JVM running for 4.045)
+09-04-2020 17:24:03.055 [http-nio-8080-exec-2] WARN  o.a.cxf.phase.PhaseInterceptorChain.doLog - Interceptor for {http://service.demo.example.com/}HelloService has thrown exception, unwinding now
+org.apache.cxf.binding.soap.SoapFault: "http://service.demo.example.com/", the namespace on the "sayHello" element, is not a valid SOAP version.
+	at org.apache.cxf.binding.soap.interceptor.ReadHeadersInterceptor.readVersion(ReadHeadersInterceptor.java:132)
+	at org.apache.cxf.binding.soap.interceptor.ReadHeadersInterceptor.handleMessage(ReadHeadersInterceptor.java:175)
+	at org.apache.cxf.binding.soap.interceptor.ReadHeadersInterceptor.handleMessage(ReadHeadersInterceptor.java:70)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:308)
+	at org.apache.cxf.transport.ChainInitiationObserver.onMessage(ChainInitiationObserver.java:121)
+	at org.apache.cxf.transport.http.AbstractHTTPDestination.invoke(AbstractHTTPDestination.java:267)
+	at org.apache.cxf.transport.servlet.ServletController.invokeDestination(ServletController.java:234)
+	at org.apache.cxf.transport.servlet.ServletController.invoke(ServletController.java:208)
+	at org.apache.cxf.transport.servlet.ServletController.invoke(ServletController.java:160)
+	at org.apache.cxf.transport.servlet.CXFNonSpringServlet.invoke(CXFNonSpringServlet.java:225)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.handleRequest(AbstractHTTPServlet.java:301)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.doPost(AbstractHTTPServlet.java:220)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.service(AbstractHTTPServlet.java:276)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+09-04-2020 17:24:03.081 [http-nio-8080-exec-2] INFO  o.a.cxf.services.Hello.FAULT_OUT.performLogging - FAULT_OUT
+    Content-Type: text/xml
+    ResponseCode: 500
+    ExchangeId: bfa9675a-d18c-4cba-9a5c-5939ba7ee72d
+    ServiceName: HelloService
+    PortName: HelloPort
+    PortTypeName: Hello
+    Headers: {}
+    Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <soap:Fault>
+      <faultcode>soap:VersionMismatch</faultcode>
+      <faultstring>"http://service.demo.example.com/", the namespace on the "sayHello" element, is not a valid SOAP version.</faultstring>
+    </soap:Fault>
+  </soap:Body>
+</soap:Envelope>
+
+
+09-04-2020 17:31:07.114 [http-nio-8080-exec-4] INFO  org.apache.cxf.services.Hello.REQ_IN.performLogging - REQ_IN
+    Address: http://localhost:8080/services/hello?wsdl
+    HttpMethod: POST
+    Content-Type: application/xml
+    ExchangeId: e0edb0cf-eedb-423a-ab9e-a37696096cdd
+    ServiceName: HelloService
+    PortName: HelloPort
+    PortTypeName: Hello
+    Headers: {Accept=*/*, postman-token=4f327d0d-422b-4ad6-92af-65596284d872, host=localhost:8080, connection=keep-alive, content-type=application/xml, cache-control=no-cache, Content-Length=288, accept-encoding=gzip, deflate, br, user-agent=PostmanRuntime/7.24.0}
+    Payload: <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:q0="http://service.demo.example.com/">
+ 
+  <soapenv:Body>
+     
+    <q0:sayHello xmlns:q0="http://service.demo.example.com/">
+		
+      <name>Amit Aswal The Great</name>
+	
+    </q0:sayHello>
+ 
+  </soapenv:Body>
+
+</soapenv:Envelope>
+
+
+09-04-2020 17:31:07.124 [http-nio-8080-exec-4] INFO  c.e.d.service.impl.HelloServiceImpl.sayHello - Executing operation sayHelloAmit Aswal The Great
+09-04-2020 17:31:07.145 [http-nio-8080-exec-4] INFO  o.apache.cxf.services.Hello.RESP_OUT.performLogging - RESP_OUT
+    Address: http://localhost:8080/services/hello?wsdl
+    Content-Type: text/xml
+    ResponseCode: 200
+    ExchangeId: e0edb0cf-eedb-423a-ab9e-a37696096cdd
+    ServiceName: HelloService
+    PortName: HelloPort
+    PortTypeName: Hello
+    Headers: {}
+    Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <ns2:sayHelloResponse xmlns:ns2="http://service.demo.example.com/">
+      <return>Hello Amit Aswal The Great, Welcome to CXF RS Spring Boot World!!!</return>
+    </ns2:sayHelloResponse>
+  </soap:Body>
+</soap:Envelope>
+
+
+09-04-2020 17:31:54.246 [http-nio-8080-exec-5] INFO  org.apache.cxf.services.Hello.REQ_IN.performLogging - REQ_IN
+    Address: http://localhost:8080/services/hello?wsdl
+    HttpMethod: POST
+    Content-Type: application/xml
+    ExchangeId: ead9513e-d232-4771-8418-d49c44d4caa1
+    ServiceName: HelloService
+    PortName: HelloPort
+    PortTypeName: Hello
+    Headers: {Accept=*/*, postman-token=8bc90bad-5945-466e-971c-32463da92b90, host=localhost:8080, connection=keep-alive, content-type=application/xml, cache-control=no-cache, Content-Length=288, accept-encoding=gzip, deflate, br, user-agent=PostmanRuntime/7.24.0}
+    Payload: <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:q0="http://service.demo.example.com/">
+ 
+  <soapenv:Body>
+     
+    <q0:sayHello xmlns:q0="http://service.demo.example.com/">
+		
+      <name>Amit Aswal The Great</name>
+	
+    </q0:sayHello>
+ 
+  </soapenv:Body>
+
+</soapenv:Envelope>
+
+
+09-04-2020 17:31:54.247 [http-nio-8080-exec-5] INFO  c.e.d.service.impl.HelloServiceImpl.sayHello - Executing operation sayHelloAmit Aswal The Great
+09-04-2020 17:31:54.249 [http-nio-8080-exec-5] INFO  o.apache.cxf.services.Hello.RESP_OUT.performLogging - RESP_OUT
+    Address: http://localhost:8080/services/hello?wsdl
+    Content-Type: text/xml
+    ResponseCode: 200
+    ExchangeId: ead9513e-d232-4771-8418-d49c44d4caa1
+    ServiceName: HelloService
+    PortName: HelloPort
+    PortTypeName: Hello
+    Headers: {}
+    Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <ns2:sayHelloResponse xmlns:ns2="http://service.demo.example.com/">
+      <return>Hello Amit Aswal The Great, Welcome to CXF RS Spring Boot World!!!</return>
+    </ns2:sayHelloResponse>
+  </soap:Body>
+</soap:Envelope>
+
+
