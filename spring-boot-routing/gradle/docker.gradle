@@ -2,9 +2,9 @@ jib {
     from {
         image = "adoptopenjdk:11-jre-openj9"
     }
-    // to upload in amazon elastic container
+    // to upload in Amazon ECR
     to {
-        image = "816253445251.dkr.ecr.us-east-1.amazonaws.com/spring-boot-google-jib-sample:latest"
+        image = ".amazonaws.com/spring-boot-google-jib-sample:latest"
         credHelper = "ecr-login"
     }
     /* to upload in local docker
