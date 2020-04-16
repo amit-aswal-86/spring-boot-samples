@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: spring-boot-routing
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: spring-boot-routing
+  template:
+    metadata:
+      labels:
+        app: spring-boot-routing
+    spec:
+      containers:
+        - name: app
+          image: amitaswal/spring-boot-routing
+          ports:
+            - containerPort: 8081
+          imagePullPolicy: Always
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: spring-boot-routing
+spec:
+  selector:
+    app: spring-boot-routing
+  ports:
+    - port: 80
+      targetPort: 8081
+  type: LoadBalancer

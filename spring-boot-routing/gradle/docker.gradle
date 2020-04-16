@@ -3,15 +3,16 @@ jib {
         image = "adoptopenjdk:11-jre-openj9"
     }
     // to upload in Amazon ECR
+    /*
     to {
-        image = "816253445251.dkr.ecr.us-east-1.amazonaws.com/spring-boot-google-jib:latest"
+        image = "accountId.amazonaws.com/spring-boot-google-jib:latest"
         credHelper = "ecr-login"
     }
-    /* to upload in local docker
-    to {
-        image = "camel-spring-boot-sample:latest"
-    }
     */
+    /* to upload in local docker */
+    to {
+        image = "spring-boot-routing:latest"
+    }
     container {
         entrypoint = ["bash", "-c", "/entrypoint.sh"]
         ports = ["8081"]
