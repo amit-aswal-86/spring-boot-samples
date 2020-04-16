@@ -58,6 +58,9 @@
        |-----------|---------------------|-------------|----------------------------|
        * Opening service default/spring-boot-routing in default browser...
    ```
+### For more information follow below links
+ - [https://learnk8s.io/spring-boot-kubernetes-guide](https://learnk8s.io/spring-boot-kubernetes-guide)
+ - [https://spring.io/guides/gs/spring-boot-kubernetes/](https://spring.io/guides/gs/spring-boot-kubernetes/)
 
 Setting up the AWS infrastructure and configuring settings to push a Docker image to a private Amazon ECR repository.
  
