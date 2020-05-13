@@ -49,10 +49,10 @@ dependencies {
 
 	// newly added
 	implementation 'org.apache.camel:camel-http:3.1.0'
-	implementation 'javax.xml.bind:jaxb-api:2.3.1'
-	implementation 'javax.xml.ws:jaxws-api:2.3.1'
-	implementation 'com.sun.xml.ws:jaxws-ri:2.3.2'
-	implementation 'com.sun.activation:javax.activation:1.2.0'
+	// implementation 'javax.xml.bind:jaxb-api:2.3.1'
+	// implementation 'javax.xml.ws:jaxws-api:2.3.1'
+	// implementation 'com.sun.xml.ws:jaxws-ri:2.3.2'
+	// implementation 'com.sun.activation:javax.activation:1.2.0'
 
 	compile group: 'commons-io', name: 'commons-io', version: '2.6'
 	compile group: 'com.fasterxml.jackson.dataformat', name: 'jackson-dataformat-xml', version: '2.10.3'
