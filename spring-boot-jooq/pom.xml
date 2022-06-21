@@ -17,7 +17,7 @@
 	<properties>
 		<java.version>11</java.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<mysql-connector-java.version>8.0.20</mysql-connector-java.version>
+		<mysql-connector-java.version>8.0.28</mysql-connector-java.version>
 		<properties-maven-plugin.version>1.0.0</properties-maven-plugin.version>
 		<spring.boot.version>2.2.7.RELEASE</spring.boot.version>
 		<start-class>com.jooq.example.DemoApplication</start-class>
